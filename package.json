@@ -4,7 +4,7 @@
   "description": "A starter project",
   "keywords": [
     "keyword",
-	  "other-keyword"
+    "other-keyword"
   ],
   "homepage": "https://github.com/threeal/node-ts-starter#readme",
   "bugs": {
@@ -19,6 +19,10 @@
   "main": "lib/index.js",
   "repository": "github:threeal/node-ts-starter",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
   }
 }
