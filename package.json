@@ -20,9 +20,16 @@
   "repository": "github:threeal/node-ts-starter",
   "scripts": {
     "build": "tsc",
+    "fix": "ts-standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "ts-standard": "^12.0.2",
     "typescript": "^5.1.6"
+  },
+  "ts-standard": {
+    "ignore": [
+      "lib"
+    ]
   }
 }
