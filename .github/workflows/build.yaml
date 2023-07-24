@@ -20,6 +20,9 @@ jobs:
       - name: Install deps
         run: npm install
 
+      - name: Fix code
+        run: npm run fix
+
       - name: Build lib
         run: npm run build
 
