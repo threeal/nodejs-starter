@@ -14,9 +14,9 @@
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
   "files": [
-    "lib"
+    "dist"
   ],
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "repository": "github:threeal/node-ts-starter",
   "scripts": {
     "build": "tsc",
@@ -29,7 +29,7 @@
   },
   "ts-standard": {
     "ignore": [
-      "lib"
+      "dist"
     ]
   }
 }
