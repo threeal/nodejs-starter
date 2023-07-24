@@ -19,17 +19,31 @@
   "main": "dist/index.js",
   "repository": "github:threeal/node-ts-starter",
   "scripts": {
-    "build": "tsc",
-    "fix": "ts-standard --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nx exec -- tsc",
+    "fix": "nx exec -- ts-standard --fix"
   },
   "devDependencies": {
     "ts-standard": "^12.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "nx": "16.5.5"
   },
   "ts-standard": {
     "ignore": [
       "dist"
     ]
+  },
+  "nx": {
+    "namedInputs": {
+      "default": ["{projectRoot}/**/*"]
+    },
+    "targets": {
+      "build": {
+        "inputs": ["default"],
+        "dependsOn": ["fix"]
+      },
+      "fix": {
+        "inputs": ["default"]
+      }
+    }
   }
 }
