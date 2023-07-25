@@ -51,11 +51,6 @@
         "dependsOn": [
           "sort"
         ]
-      },
-      "sort": {
-        "inputs": [
-          "default"
-        ]
       }
     }
   },
