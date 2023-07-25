@@ -11,39 +11,52 @@
     "url": "https://github.com/threeal/node-ts-starter/issues",
     "email": "threeal@github.com"
   },
+  "repository": "github:threeal/node-ts-starter",
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
-  "repository": "github:threeal/node-ts-starter",
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- ts-standard --fix"
+    "fix": "nx exec -- ts-standard --fix",
+    "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
+    "nx": "16.5.5",
+    "sort-package-json": "^2.5.1",
     "ts-standard": "^12.0.2",
-    "typescript": "^5.1.6",
-    "nx": "16.5.5"
+    "typescript": "^5.1.6"
+  },
+  "nx": {
+    "namedInputs": {
+      "default": [
+        "{projectRoot}/**/*"
+      ]
+    },
+    "targets": {
+      "build": {
+        "inputs": [
+          "default"
+        ],
+        "dependsOn": [
+          "fix"
+        ]
+      },
+      "fix": {
+        "inputs": [
+          "default"
+        ],
+        "dependsOn": [
+          "sort"
+        ]
+      }
+    }
   },
   "ts-standard": {
     "ignore": [
       "dist"
     ]
-  },
-  "nx": {
-    "namedInputs": {
-      "default": ["{projectRoot}/**/*"]
-    },
-    "targets": {
-      "build": {
-        "inputs": ["default"],
-        "dependsOn": ["fix"]
-      },
-      "fix": {
-        "inputs": ["default"]
-      }
-    }
   }
 }
