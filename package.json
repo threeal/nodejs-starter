@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- ts-standard --fix",
+    "fix": "nx exec -- ts-standard --fix src",
     "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
@@ -54,10 +54,5 @@
         ]
       }
     }
-  },
-  "ts-standard": {
-    "ignore": [
-      "dist"
-    ]
   }
 }
