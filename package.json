@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- ts-standard --fix",
+    "fix": "nx exec -- ts-standard --fix src",
     "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
@@ -29,6 +29,7 @@
     "ts-standard": "^12.0.2",
     "typescript": "^5.1.6"
   },
+  "packageManager": "yarn@3.6.1",
   "nx": {
     "namedInputs": {
       "default": [
@@ -53,10 +54,5 @@
         ]
       }
     }
-  },
-  "ts-standard": {
-    "ignore": [
-      "dist"
-    ]
   }
 }
