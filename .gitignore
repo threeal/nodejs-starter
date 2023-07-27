@@ -1,4 +1,10 @@
 .*
 !.git*
+!.pnp.*
+!.yarn*
+
+.yarn/*
+!.yarn/cache
+!.yarn/releases
 
 node_modules/
