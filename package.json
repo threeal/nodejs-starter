@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- prettier --write src",
+    "fix": "nx exec -- prettier --write \"*.json\" src",
     "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
