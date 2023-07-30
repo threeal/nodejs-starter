@@ -20,13 +20,13 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- ts-standard --fix src",
+    "fix": "nx exec -- prettier --write src",
     "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
     "nx": "16.5.5",
+    "prettier": "^3.0.0",
     "sort-package-json": "^2.5.1",
-    "ts-standard": "^12.0.2",
     "typescript": "^5.1.6"
   },
   "packageManager": "yarn@3.6.1",
