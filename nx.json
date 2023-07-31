@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "fix", "sort"]
+        "cacheableOperations": ["build", "fix", "lint", "sort"]
       }
     }
   }
