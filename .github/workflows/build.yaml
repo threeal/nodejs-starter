@@ -15,7 +15,7 @@ jobs:
         run: yarn install
 
       - name: Build lib
-        run: yarn run build
+        run: yarn build
 
       - name: Check diff
         run: git diff --exit-code HEAD

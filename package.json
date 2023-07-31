@@ -20,13 +20,17 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- ts-standard --fix src",
+    "format": "nx exec -- prettier --write .",
+    "lint": "nx exec -- eslint src",
     "sort": "nx exec -- sort-package-json"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.46.0",
     "nx": "16.5.5",
+    "prettier": "^3.0.0",
     "sort-package-json": "^2.5.1",
-    "ts-standard": "^12.0.2",
     "typescript": "^5.1.6"
   },
   "packageManager": "yarn@3.6.1",
@@ -42,15 +46,23 @@
           "default"
         ],
         "dependsOn": [
-          "fix"
+          "lint"
         ]
       },
-      "fix": {
+      "format": {
         "inputs": [
           "default"
         ],
         "dependsOn": [
           "sort"
+        ]
+      },
+      "lint": {
+        "inputs": [
+          "default"
+        ],
+        "dependsOn": [
+          "format"
         ]
       }
     }
