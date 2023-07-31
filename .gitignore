@@ -2,6 +2,7 @@
 !.eslint*
 !.git*
 !.pnp.*
+!.prettier*
 !.yarn*
 
 .yarn/*
