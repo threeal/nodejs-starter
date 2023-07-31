@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
-    "fix": "nx exec -- prettier --write .",
+    "format": "nx exec -- prettier --write .",
     "lint": "nx exec -- eslint src",
     "sort": "nx exec -- sort-package-json"
   },
@@ -49,7 +49,7 @@
           "lint"
         ]
       },
-      "fix": {
+      "format": {
         "inputs": [
           "default"
         ],
@@ -62,7 +62,7 @@
           "default"
         ],
         "dependsOn": [
-          "fix"
+          "format"
         ]
       }
     }
