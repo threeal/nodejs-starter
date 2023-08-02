@@ -18,6 +18,9 @@ jobs:
       - name: Install deps
         run: yarn install
 
+      - name: Clean lib
+        run: yarn clean
+
       - name: Test lib
         run: yarn test
 
