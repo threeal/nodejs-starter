@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.6.2"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.5.5"],\
             ["prettier", "npm:3.0.0"],\
+            ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
             ["ts-jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
@@ -5571,6 +5572,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["glob", "npm:7.2.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:5.0.1", {\
+          "packageLocation": "./.yarn/cache/rimraf-npm-5.0.1-26fb251a1d-bafce85391.zip/node_modules/rimraf/",\
+          "packageDependencies": [\
+            ["rimraf", "npm:5.0.1"],\
+            ["glob", "npm:10.3.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["run-parallel", [\
@@ -5813,6 +5822,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.6.2"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.5.5"],\
             ["prettier", "npm:3.0.0"],\
+            ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
             ["ts-jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.1.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\

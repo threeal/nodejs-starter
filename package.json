@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "build": "nx exec -- tsc",
+    "clean": "nx exec -- rimraf dist",
     "format": "nx exec -- prettier --write .",
     "lint": "nx exec -- eslint src",
     "sort": "nx exec -- sort-package-json",
@@ -33,6 +34,7 @@
     "jest": "^29.6.2",
     "nx": "16.5.5",
     "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
     "sort-package-json": "^2.5.1",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
