@@ -14,6 +14,7 @@
   "repository": "github:threeal/node-ts-starter",
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
+  "type": "module",
   "main": "dist/index.js",
   "files": [
     "dist"
