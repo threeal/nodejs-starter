@@ -21,6 +21,9 @@ jobs:
       - name: Clean lib
         run: yarn clean
 
+      - name: Build lib
+        run: yarn build
+
       - name: Test lib
         run: yarn test
 
