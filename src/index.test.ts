@@ -1,5 +1,5 @@
 import { expect, it } from "@jest/globals";
-import { isOdd, isEven } from "./";
+import { isOdd, isEven } from "./index.mjs";
 
 it("should be odd", () => {
   const val = 5;

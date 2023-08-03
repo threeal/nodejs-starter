@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
             ["ts-jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.1.1"],\
+            ["ts-jest-resolver", "npm:2.0.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -5836,6 +5837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
             ["ts-jest", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:29.1.1"],\
+            ["ts-jest-resolver", "npm:2.0.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -6161,6 +6163,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "esbuild",\
             "jest",\
             "typescript"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["ts-jest-resolver", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/ts-jest-resolver-npm-2.0.1-ebb3c6f6e1-0845b9ab6a.zip/node_modules/ts-jest-resolver/",\
+          "packageDependencies": [\
+            ["ts-jest-resolver", "npm:2.0.1"],\
+            ["jest-resolve", "npm:29.6.2"]\
           ],\
           "linkType": "HARD"\
         }]\

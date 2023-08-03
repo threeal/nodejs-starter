@@ -14,6 +14,7 @@
   "repository": "github:threeal/node-ts-starter",
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
+  "type": "module",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -37,6 +38,7 @@
     "rimraf": "^5.0.1",
     "sort-package-json": "^2.5.1",
     "ts-jest": "^29.1.1",
+    "ts-jest-resolver": "^2.0.1",
     "typescript": "^5.1.6"
   },
   "packageManager": "yarn@3.6.1",
