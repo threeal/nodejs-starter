@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
 jobs:
-  lib:
+  package:
     runs-on: ${{ matrix.os }}-latest
     strategy:
       fail-fast: false
@@ -18,11 +18,14 @@ jobs:
       - name: Install deps
         run: yarn install
 
-      - name: Clean lib
+      - name: Clean dist
         run: yarn clean
 
-      - name: Test lib
-        run: yarn test
+      - name: Build dist
+        run: yarn build
 
       - name: Check diff
         run: git diff --exit-code HEAD
+
+      - name: Test lib
+        run: yarn test
