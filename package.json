@@ -25,7 +25,7 @@
     "format": "nx exec -- prettier --write .",
     "lint": "nx exec -- eslint src",
     "sort": "nx exec -- sort-package-json",
-    "test": "nx exec -- mocha \"src/**/*.test.mjs\""
+    "test": "nx exec -- mocha"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.2.0",
