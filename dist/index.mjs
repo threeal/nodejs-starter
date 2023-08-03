@@ -4,4 +4,4 @@ export function isOdd(value) {
 export function isEven(value) {
     return value % 2 === 0;
 }
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.mjs.map
