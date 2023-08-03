@@ -5,8 +5,6 @@
     "functions": 100,
     "lines": 100
   },
-  "exclude": [
-    ".pnp.*",
-    "test"
-  ]
+  "exclude": [".pnp.*", "test"],
+  "reporter": ["html", "text"]
 }
