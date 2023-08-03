@@ -23,7 +23,7 @@
     "build": "nx exec -- tsc",
     "clean": "nx exec -- rimraf dist",
     "format": "nx exec -- prettier --write .",
-    "lint": "nx exec -- eslint src",
+    "lint": "nx exec -- eslint src test",
     "sort": "nx exec -- sort-package-json",
     "test": "nx exec -- mocha"
   },
