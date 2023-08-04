@@ -1,7 +1,5 @@
-import * as chai from "chai";
+import "chai/register-should.js";
 import { isOdd, isEven } from "../dist/index.mjs";
-
-chai.should();
 
 it("should be odd", () => {
   const val = 5;
