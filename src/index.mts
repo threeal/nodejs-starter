@@ -1,7 +1,7 @@
 /**
  * Check if a given number is odd.
  *
- * @param value The number to check for oddness.
+ * @param value - The number to check for oddness.
  * @returns `true` if the number is odd, `false` otherwise.
  * @example
  * ```typescript
@@ -16,11 +16,11 @@ export function isOdd(value: number): boolean {
 /**
  * Check if a given number is even.
  *
- * @param value The number to check for evenness.
+ * @param value - The number to check for evenness.
  * @returns `true` if the number is even, `false` otherwise.
  * @example
  * ```typescript
- * const result = isEven(4);
+ * const result = isEven(4)asd;
  * // Output: true
  * ```
  */

@@ -10,7 +10,10 @@
       "files": ["**/*.mts"],
       "extends": ["plugin:@typescript-eslint/recommended"],
       "parser": "@typescript-eslint/parser",
-      "plugins": ["@typescript-eslint"]
+      "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
+      "rules": {
+        "tsdoc/syntax": "error"
+      }
     },
     {
       "files": ["**/*.test.mjs"],
