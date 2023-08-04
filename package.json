@@ -20,12 +20,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "nx exec -- tsc",
-    "clean": "nx exec -- rimraf dist",
-    "format": "nx exec -- prettier --write .",
-    "lint": "nx exec -- eslint src test",
-    "sort": "nx exec -- sort-package-json",
-    "test": "nx exec -- c8 mocha"
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "format": "prettier --write .",
+    "lint": "eslint src test",
+    "sort": "sort-package-json",
+    "test": "c8 mocha"
   },
   "devDependencies": {
     "@types/chai": "^4.3.5",
@@ -42,37 +42,5 @@
     "typescript": "^5.1.6"
   },
   "packageManager": "yarn@3.6.1",
-  "nx": {
-    "namedInputs": {
-      "default": [
-        "{projectRoot}/**/*"
-      ]
-    },
-    "targets": {
-      "build": {
-        "inputs": [
-          "default"
-        ],
-        "dependsOn": [
-          "lint"
-        ]
-      },
-      "format": {
-        "inputs": [
-          "default"
-        ],
-        "dependsOn": [
-          "sort"
-        ]
-      },
-      "lint": {
-        "inputs": [
-          "default"
-        ],
-        "dependsOn": [
-          "format"
-        ]
-      }
-    }
-  }
+  "nx": {}
 }
