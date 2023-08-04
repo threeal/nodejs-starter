@@ -1,0 +1,1 @@
+{"version":3,"file":"ping.mjs","sourceRoot":"","sources":["../src/ping.mts"],"names":[],"mappings":"AAAA,OAAO,IAAI,MAAM,MAAM,CAAC;AAExB;;;;;;;;;GASG;AACH,MAAM,CAAC,KAAK,UAAU,aAAa;IACjC,MAAM,GAAG,GAAG,MAAM,IAAI,CAAC,OAAO,CAAC,KAAK,CAAC,WAAW,CAAC,CAAC;IAClD,OAAO,GAAG,CAAC,KAAK,CAAC;AACnB,CAAC"}

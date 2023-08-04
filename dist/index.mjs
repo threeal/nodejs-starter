@@ -1,3 +1,4 @@
+export { pingLocalhost } from "./ping.mjs";
 /**
  * Check if a given number is odd.
  *

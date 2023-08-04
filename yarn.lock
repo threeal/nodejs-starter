@@ -314,6 +314,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ping@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@types/ping@npm:0.4.1"
+  checksum: 9b94837fe66df70558c5a42b0e0c8371b4950ab56b96c42c8df809ff2cf52477dd0a7e01d2e6b38af8bb6683b3dcb54587960b96b4b1f3d40fdb529aea348ad0
+  languageName: node
+  linkType: hard
+
 "@types/semver@npm:^7.5.0":
   version: 7.5.0
   resolution: "@types/semver@npm:7.5.0"
@@ -2751,6 +2758,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ping@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "ping@npm:0.4.4"
+  checksum: cab10af309312e3a6822eccb7f323f0c9a1e17ef5895954114e31b6a1cced5e2ced3563990b79c66d074372e75aa4c846d9001120ee296b365de6a2adef5b8f9
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -3097,6 +3111,7 @@ __metadata:
   resolution: "starter@workspace:."
   dependencies:
     "@types/chai": ^4.3.5
+    "@types/ping": ^0.4.1
     "@typescript-eslint/eslint-plugin": ^6.2.0
     "@typescript-eslint/parser": ^6.2.0
     c8: ^8.0.1
@@ -3105,6 +3120,7 @@ __metadata:
     eslint-plugin-tsdoc: ^0.2.17
     mocha: ^10.2.0
     nx: 16.6.0
+    ping: ^0.4.4
     prettier: ^3.0.0
     rimraf: ^5.0.1
     sort-package-json: ^2.5.1
