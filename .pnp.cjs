@@ -29,14 +29,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@types/chai", "npm:4.3.5"],\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
+            ["@types/ping", "npm:0.4.1"],\
             ["@typescript-eslint/eslint-plugin", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["@typescript-eslint/parser", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["c8", "npm:8.0.1"],\
             ["chai", "npm:4.3.7"],\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["mocha", "npm:10.2.0"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.6.0"],\
+            ["ping", "npm:0.4.4"],\
             ["prettier", "npm:3.0.0"],\
             ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
@@ -418,6 +422,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/chai-as-promised", [\
+        ["npm:7.1.5", {\
+          "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-7.1.5-c83fbd2182-7c1345c6e3.zip/node_modules/@types/chai-as-promised/",\
+          "packageDependencies": [\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
+            ["@types/chai", "npm:4.3.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/istanbul-lib-coverage", [\
         ["npm:2.0.4", {\
           "packageLocation": "./.yarn/cache/@types-istanbul-lib-coverage-npm-2.0.4-734954bb56-a25d7589ee.zip/node_modules/@types/istanbul-lib-coverage/",\
@@ -432,6 +446,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-json-schema-npm-7.0.12-f05cfc0e99-00239e9723.zip/node_modules/@types/json-schema/",\
           "packageDependencies": [\
             ["@types/json-schema", "npm:7.0.12"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/ping", [\
+        ["npm:0.4.1", {\
+          "packageLocation": "./.yarn/cache/@types-ping-npm-0.4.1-241bce0704-9b94837fe6.zip/node_modules/@types/ping/",\
+          "packageDependencies": [\
+            ["@types/ping", "npm:0.4.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1078,6 +1101,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loupe", "npm:2.3.6"],\
             ["pathval", "npm:1.1.1"],\
             ["type-detect", "npm:4.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["chai-as-promised", [\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
+          "packageDependencies": [\
+            ["chai-as-promised", "npm:7.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/chai-as-promised-virtual-b15c019d2c/0/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
+          "packageDependencies": [\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
+            ["@types/chai", "npm:4.3.5"],\
+            ["chai", "npm:4.3.7"],\
+            ["check-error", "npm:1.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/chai",\
+            "chai"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3245,6 +3291,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ping", [\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/ping-npm-0.4.4-4ce0085811-cab10af309.zip/node_modules/ping/",\
+          "packageDependencies": [\
+            ["ping", "npm:0.4.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["prelude-ls", [\
         ["npm:1.2.1", {\
           "packageLocation": "./.yarn/cache/prelude-ls-npm-1.2.1-3e4d272a55-cd192ec0d0.zip/node_modules/prelude-ls/",\
@@ -3620,14 +3675,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["starter", "workspace:."],\
             ["@types/chai", "npm:4.3.5"],\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
+            ["@types/ping", "npm:0.4.1"],\
             ["@typescript-eslint/eslint-plugin", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["@typescript-eslint/parser", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["c8", "npm:8.0.1"],\
             ["chai", "npm:4.3.7"],\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["mocha", "npm:10.2.0"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.6.0"],\
+            ["ping", "npm:0.4.4"],\
             ["prettier", "npm:3.0.0"],\
             ["rimraf", "npm:5.0.1"],\
             ["sort-package-json", "npm:2.5.1"],\
