@@ -22,6 +22,9 @@
     "lint": {
       "inputs": ["default"],
       "dependsOn": ["format"]
+    },
+    "test": {
+      "dependsOn": ["build"]
     }
   }
 }
