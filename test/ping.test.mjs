@@ -1,6 +1,5 @@
 import { pingLocalhost } from "../dist/ping.mjs";
 
-it("should ping the localhost", async () => {
-  const isAlive = await pingLocalhost();
-  isAlive.should.be.true;
+it("should ping the localhost", () => {
+  return pingLocalhost().should.eventually.be.true;
 });

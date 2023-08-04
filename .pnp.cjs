@@ -29,11 +29,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@types/chai", "npm:4.3.5"],\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/ping", "npm:0.4.1"],\
             ["@typescript-eslint/eslint-plugin", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["@typescript-eslint/parser", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["c8", "npm:8.0.1"],\
             ["chai", "npm:4.3.7"],\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["mocha", "npm:10.2.0"],\
@@ -415,6 +417,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:4.3.5", {\
           "packageLocation": "./.yarn/cache/@types-chai-npm-4.3.5-dce79013f2-c8f26a88c6.zip/node_modules/@types/chai/",\
           "packageDependencies": [\
+            ["@types/chai", "npm:4.3.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/chai-as-promised", [\
+        ["npm:7.1.5", {\
+          "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-7.1.5-c83fbd2182-7c1345c6e3.zip/node_modules/@types/chai-as-promised/",\
+          "packageDependencies": [\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/chai", "npm:4.3.5"]\
           ],\
           "linkType": "HARD"\
@@ -1089,6 +1101,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loupe", "npm:2.3.6"],\
             ["pathval", "npm:1.1.1"],\
             ["type-detect", "npm:4.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["chai-as-promised", [\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
+          "packageDependencies": [\
+            ["chai-as-promised", "npm:7.1.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/chai-as-promised-virtual-b15c019d2c/0/cache/chai-as-promised-npm-7.1.1-cdc17e4612-7262868a5b.zip/node_modules/chai-as-promised/",\
+          "packageDependencies": [\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
+            ["@types/chai", "npm:4.3.5"],\
+            ["chai", "npm:4.3.7"],\
+            ["check-error", "npm:1.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/chai",\
+            "chai"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3640,11 +3675,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["starter", "workspace:."],\
             ["@types/chai", "npm:4.3.5"],\
+            ["@types/chai-as-promised", "npm:7.1.5"],\
             ["@types/ping", "npm:0.4.1"],\
             ["@typescript-eslint/eslint-plugin", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["@typescript-eslint/parser", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:6.2.0"],\
             ["c8", "npm:8.0.1"],\
             ["chai", "npm:4.3.7"],\
+            ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
             ["mocha", "npm:10.2.0"],\
