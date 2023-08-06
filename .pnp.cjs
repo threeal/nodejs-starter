@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["esmock", "npm:2.3.5"],\
             ["mocha", "npm:10.2.0"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.6.0"],\
             ["ping", "npm:0.4.4"],\
@@ -1638,6 +1639,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/eslint-visitor-keys-npm-3.4.2-304459f972-9e0e7e4aae.zip/node_modules/eslint-visitor-keys/",\
           "packageDependencies": [\
             ["eslint-visitor-keys", "npm:3.4.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["esmock", [\
+        ["npm:2.3.5", {\
+          "packageLocation": "./.yarn/cache/esmock-npm-2.3.5-48c3a929b0-36e60ed78d.zip/node_modules/esmock/",\
+          "packageDependencies": [\
+            ["esmock", "npm:2.3.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3684,6 +3694,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai-as-promised", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:7.1.1"],\
             ["eslint", "npm:8.46.0"],\
             ["eslint-plugin-tsdoc", "npm:0.2.17"],\
+            ["esmock", "npm:2.3.5"],\
             ["mocha", "npm:10.2.0"],\
             ["nx", "virtual:86127e1a9c34c7dd72e1b1f75d8af0c2167e804d15063c1dd57c7fbe8d44c4dd4fc8c4ee244f23ad9f5f424151fe6bb72adc39fffcf4e92b22d52ff4d638a2b0#npm:16.6.0"],\
             ["ping", "npm:0.4.4"],\
