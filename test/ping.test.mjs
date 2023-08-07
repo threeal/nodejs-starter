@@ -5,15 +5,18 @@ import sinon from "sinon";
 
 const require = createRequire(import.meta.url);
 
-it("should not ping the localhost", async () => {
-  const probeStub = sinon.stub();
-  const { pingLocalhost } = await esmock("../dist/ping.mjs", {
-    [require.resolve("ping").replaceAll(path.sep, "/")]: {
-      promise: {
-        probe: probeStub,
-      },
-    },
+const stubs = {
+  ping: { promise: { probe: sinon.stub() } },
+};
+
+async function mockImport() {
+  return esmock("../dist/ping.mjs", {
+    [require.resolve("ping").replaceAll(path.sep, "/")]: stubs.ping,
   });
-  probeStub.resolves({ alive: true });
-  return pingLocalhost().should.eventually.be.true;
+}
+
+it("should not ping the localhost", async () => {
+  const { pingLocalhost } = await mockImport("../dist/ping.mjs");
+  stubs.ping.promise.probe.resolves({ alive: true });
+  pingLocalhost().should.eventually.be.true;
 });
