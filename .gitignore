@@ -2,13 +2,7 @@
 !.c8*
 !.eslint*
 !.git*
-!.pnp.*
 !.prettier*
-!.yarn*
-
-.yarn/*
-!.yarn/cache/
-!.yarn/releases/
 
 coverage/
 docs/
