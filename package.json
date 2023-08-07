@@ -26,7 +26,7 @@
     "format": "prettier --write .",
     "lint": "eslint src test",
     "sort": "sort-package-json",
-    "test": "c8 mocha"
+    "test": "c8 mocha --loader=esmock"
   },
   "dependencies": {
     "ping": "^0.4.4"
@@ -42,10 +42,12 @@
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.46.0",
     "eslint-plugin-tsdoc": "^0.2.17",
+    "esmock": "^2.3.5",
     "mocha": "^10.2.0",
     "nx": "16.6.0",
     "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
+    "sinon": "^15.2.0",
     "sort-package-json": "^2.5.1",
     "typedoc": "^0.24.8",
     "typescript": "^5.1.6"
