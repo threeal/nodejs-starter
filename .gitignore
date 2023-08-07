@@ -5,9 +5,6 @@
 !.pnp.*
 !.prettier*
 
-.yarn/*
-!.yarn/cache/
-
 coverage/
 docs/
 node_modules/
