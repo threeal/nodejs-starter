@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: latest
 
+      - name: Setup Yarn
+        run: |
+          corepack enable
+          corepack prepare yarn@stable --activate
+
       - name: Install deps
         run: yarn install
 
