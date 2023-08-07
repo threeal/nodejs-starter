@@ -2,7 +2,6 @@
 !.c8*
 !.eslint*
 !.git*
-!.pnp.*
 !.prettier*
 
 coverage/
