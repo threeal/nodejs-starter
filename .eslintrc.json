@@ -9,6 +9,7 @@
     "no-constant-binary-expression": "error",
     "no-constructor-return": "error",
     "no-duplicate-imports": "error",
+    "no-new-native-nonconstructor": "error",
     "sort-imports": "error"
   },
   "overrides": [
