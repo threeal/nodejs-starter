@@ -5,6 +5,9 @@
     "ecmaVersion": 2022,
     "sourceType": "module"
   },
+  "rules": {
+    "func-style": ["error", "declaration"]
+  },
   "overrides": [
     {
       "files": ["**/*.mts"],
