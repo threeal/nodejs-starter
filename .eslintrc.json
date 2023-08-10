@@ -15,6 +15,7 @@
     "no-self-compare": "error",
     "no-unmodified-loop-condition": "error",
     "no-unreachable-loop": "error",
+    "no-unused-private-class-members": "error",
     "sort-imports": "error"
   },
   "overrides": [
