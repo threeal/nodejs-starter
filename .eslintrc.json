@@ -1,15 +1,22 @@
 {
   "root": true,
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:all", "prettier"],
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module"
   },
+  "rules": {
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "one-var": ["error", "never"]
+  },
   "overrides": [
     {
       "files": ["**/*.mts"],
-      "extends": ["plugin:@typescript-eslint/recommended"],
+      "extends": ["plugin:@typescript-eslint/all", "prettier"],
       "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      },
       "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
       "rules": {
         "tsdoc/syntax": "error"
@@ -19,6 +26,9 @@
       "files": ["**/*.test.mjs"],
       "env": {
         "mocha": true
+      },
+      "rules": {
+        "no-unused-expressions": "off"
       }
     }
   ]

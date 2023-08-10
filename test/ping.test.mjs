@@ -1,5 +1,5 @@
-import esmock from "esmock";
 import { createRequire } from "module";
+import esmock from "esmock";
 import path from "path";
 import sinon from "sinon";
 
