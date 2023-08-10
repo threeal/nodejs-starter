@@ -6,7 +6,8 @@
     "sourceType": "module"
   },
   "rules": {
-    "func-style": ["error", "declaration", { "allowArrowFunctions": true }]
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "one-var": ["error", "never"]
   },
   "overrides": [
     {
