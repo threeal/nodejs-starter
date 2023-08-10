@@ -23,6 +23,9 @@
       "files": ["**/*.test.mjs"],
       "env": {
         "mocha": true
+      },
+      "rules": {
+        "no-unused-expressions": "off"
       }
     }
   ]
