@@ -1,6 +1,5 @@
 import { createRequire } from "module";
 import esmock from "esmock";
-import path from "path";
 import sinon from "sinon";
 
 const require = createRequire(import.meta.url);
@@ -12,7 +11,7 @@ describe("localhost ping", () => {
 
   const mockImport = () =>
     esmock("../dist/ping.mjs", {
-      [require.resolve("ping").replaceAll(path.sep, "/")]: stubs.ping,
+      [require.resolve("ping")]: stubs.ping,
     });
 
   it("should ping the localhost", async () => {
