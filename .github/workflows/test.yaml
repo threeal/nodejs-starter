@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+env:
+  NODE_OPTIONS: --experimental-import-meta-resolve
 jobs:
   package:
     runs-on: ${{ matrix.os }}-latest
