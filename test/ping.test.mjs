@@ -1,28 +1,21 @@
-import { createRequire } from "module";
 import esmock from "esmock";
-import path from "path";
 import sinon from "sinon";
-
-const require = createRequire(import.meta.url);
 
 describe("localhost ping", () => {
   const stubs = {
     ping: { promise: { probe: sinon.stub() } },
   };
 
-  const mockImport = () =>
-    esmock("../dist/ping.mjs", {
-      [require.resolve("ping").replaceAll(path.sep, "/")]: stubs.ping,
-    });
+  const mockImport = () => esmock("../dist/ping.mjs", { ping: stubs.ping });
 
   it("should ping the localhost", async () => {
-    const { pingLocalhost } = await mockImport("../dist/ping.mjs");
+    const { pingLocalhost } = await mockImport();
     stubs.ping.promise.probe.resolves({ alive: true });
     pingLocalhost().should.eventually.be.true;
   });
 
   it("should not ping the localhost", async () => {
-    const { pingLocalhost } = await mockImport("../dist/ping.mjs");
+    const { pingLocalhost } = await mockImport();
     stubs.ping.promise.probe.resolves({ alive: false });
     pingLocalhost().should.eventually.be.false;
   });
