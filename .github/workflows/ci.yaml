@@ -50,5 +50,10 @@ jobs:
       - name: Generate docs
         run: yarn doc
 
+      - name: Upload docs artifact
+        uses: actions/upload-pages-artifact@v2.0.0
+        with:
+          path: docs
+
       - name: Test lib
         run: yarn test
