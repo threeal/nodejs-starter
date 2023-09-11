@@ -50,7 +50,7 @@
     "rimraf": "^5.0.1",
     "sinon": "^15.2.0",
     "sort-package-json": "^2.5.1",
-    "typedoc": "^0.25.0",
+    "typedoc": "^0.25.1",
     "typescript": "^5.2.2"
   },
   "packageManager": "yarn@3.6.3",
