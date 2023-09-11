@@ -1336,10 +1336,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esmock@npm:^2.3.8":
-  version: 2.3.8
-  resolution: "esmock@npm:2.3.8"
-  checksum: 3d2df5cabdcaaeeee683c42ca7d1ee670b3038ff83203434e6aa23058121c047c1d4335b197f21211c56552ce70fa1fd400a1a41d1d95189c792ac34b05fe9dc
+"esmock@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "esmock@npm:2.4.1"
+  checksum: 6fc29650d119807c1566a7f2aff4b405d9aba36edfc29c5e0f724e6b3d60f4b297ff8fc5321e560003720f4e12f93c15d8796a7673b5a93039ebe971181e1a6f
   languageName: node
   linkType: hard
 
@@ -3267,7 +3267,7 @@ __metadata:
     eslint: ^8.48.0
     eslint-config-prettier: ^9.0.0
     eslint-plugin-tsdoc: ^0.2.17
-    esmock: ^2.3.8
+    esmock: ^2.4.1
     mocha: ^10.2.0
     nx: 16.7.4
     ping: ^0.4.4
