@@ -12,7 +12,8 @@ describe("localhost ping", () => {
 
   const mockImport = () =>
     esmock("../dist/ping.mjs", {
-      [require.resolve("ping").replaceAll(path.sep, "/")]: stubs.ping,
+      [`file://${require.resolve("ping").replaceAll(path.sep, "/")}`]:
+        stubs.ping,
     });
 
   it("should ping the localhost", async () => {
