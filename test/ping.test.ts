@@ -1,4 +1,4 @@
-import { expect, jest } from "@jest/globals";
+import { jest } from "@jest/globals";
 import sinon from "sinon";
 
 const stubs = {
