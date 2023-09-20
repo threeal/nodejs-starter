@@ -11,13 +11,13 @@ jest.unstable_mockModule("ping", () => ({
 
 describe("localhost ping", () => {
   it("should ping the localhost", async () => {
-    const { pingLocalhost } = await import("../dist/ping.mjs");
+    const { pingLocalhost } = await import("../src/ping.mjs");
     stubs.ping.promise.probe.resolves({ alive: true });
     expect(pingLocalhost()).resolves.toBe(true);
   });
 
   it("should not ping the localhost", async () => {
-    const { pingLocalhost } = await import("../dist/ping.mjs");
+    const { pingLocalhost } = await import("../src/ping.mjs");
     stubs.ping.promise.probe.resolves({ alive: false });
     expect(pingLocalhost()).resolves.toBe(false);
   });
