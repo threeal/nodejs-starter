@@ -1,30 +1,24 @@
-import { createRequire } from "module";
-import esmock from "esmock";
-import path from "path";
+import { expect, jest } from "@jest/globals";
 import sinon from "sinon";
 
-const require = createRequire(import.meta.url);
+const stubs = {
+  ping: { promise: { probe: sinon.stub() } },
+};
+
+jest.unstable_mockModule("ping", () => ({
+  default: stubs.ping,
+}));
 
 describe("localhost ping", () => {
-  const stubs = {
-    ping: { promise: { probe: sinon.stub() } },
-  };
-
-  const mockImport = () =>
-    esmock("../dist/ping.mjs", {
-      [`file://${require.resolve("ping").replaceAll(path.sep, "/")}`]:
-        stubs.ping,
-    });
-
   it("should ping the localhost", async () => {
-    const { pingLocalhost } = await mockImport();
+    const { pingLocalhost } = await import("../dist/ping.mjs");
     stubs.ping.promise.probe.resolves({ alive: true });
-    pingLocalhost().should.eventually.be.true;
+    expect(pingLocalhost()).resolves.toBe(true);
   });
 
   it("should not ping the localhost", async () => {
-    const { pingLocalhost } = await mockImport();
+    const { pingLocalhost } = await import("../dist/ping.mjs");
     stubs.ping.promise.probe.resolves({ alive: false });
-    pingLocalhost().should.eventually.be.false;
+    expect(pingLocalhost()).resolves.toBe(false);
   });
 });
