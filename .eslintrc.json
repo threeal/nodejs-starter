@@ -11,11 +11,11 @@
   },
   "overrides": [
     {
-      "files": ["**/*.mts"],
+      "files": ["**/*.mts", "**/*.ts"],
       "extends": ["plugin:@typescript-eslint/all", "prettier"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
-        "project": ["./tsconfig.json"]
+        "project": ["tsconfig.eslint.json"]
       },
       "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
       "rules": {
@@ -23,12 +23,9 @@
       }
     },
     {
-      "files": ["**/*.test.mjs"],
+      "files": ["**/*.test.*"],
       "env": {
-        "mocha": true
-      },
-      "rules": {
-        "no-unused-expressions": "off"
+        "jest": true
       }
     }
   ]
