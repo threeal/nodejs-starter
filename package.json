@@ -23,7 +23,7 @@
     "build": "tsc",
     "clean": "rimraf dist",
     "doc": "typedoc src/index.mts",
-    "format": "prettier --write .",
+    "format": "prettier --write . !dist",
     "lint": "eslint src",
     "sort": "sort-package-json",
     "test": "jest"
