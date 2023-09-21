@@ -6,12 +6,12 @@
     "keyword",
     "other-keyword"
   ],
-  "homepage": "https://github.com/threeal/node-ts-starter#readme",
+  "homepage": "https://github.com/threeal/nodejs-starter#readme",
   "bugs": {
-    "url": "https://github.com/threeal/node-ts-starter/issues",
+    "url": "https://github.com/threeal/nodejs-starter/issues",
     "email": "threeal@github.com"
   },
-  "repository": "github:threeal/node-ts-starter",
+  "repository": "github:threeal/nodejs-starter",
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
   "type": "module",
