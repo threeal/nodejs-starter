@@ -1087,10 +1087,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ping@npm:^0.4.3":
-  version: 0.4.3
-  resolution: "@types/ping@npm:0.4.3"
-  checksum: c081fd92cbd1f07f4fb217a4a29f3c8bcdf53a463f18283718729fe0037da6e569cb9665b9e4977cf145a1c05e3eaf3d25f2773558f72d993f1c378031f294f7
+"@types/ping@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "@types/ping@npm:0.4.4"
+  checksum: 8446425a8a71d374b19c9acd506ebb0bf35688fef3d8ec70e2c9204259e78c46515ed59202a997ed6efd7a5d6d4f3a5d5140278021dfad94e119ef3cf855504c
   languageName: node
   linkType: hard
 
@@ -4849,7 +4849,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.7"
-    "@types/ping": "npm:^0.4.3"
+    "@types/ping": "npm:^0.4.4"
     "@typescript-eslint/eslint-plugin": "npm:^6.9.1"
     "@typescript-eslint/parser": "npm:^6.9.1"
     eslint: "npm:^8.53.0"
