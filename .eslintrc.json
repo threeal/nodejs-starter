@@ -21,6 +21,7 @@
       },
       "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
       "rules": {
+        "@typescript-eslint/no-magic-numbers": "off",
         "tsdoc/syntax": "error"
       }
     },
