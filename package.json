@@ -15,7 +15,8 @@
   "license": "Unlicense",
   "author": "threeal <threeal@github.com>",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "bin": "dist/bin.mjs",
   "files": [
     "dist"
