@@ -59,6 +59,9 @@ jobs:
       - name: Test lib
         run: yarn test
 
+      - name: Run bin
+        run: yarn starter --help
+
   deploy:
     name: Deploy
     if: github.event_name != 'pull_request' && github.ref_name == 'main'
