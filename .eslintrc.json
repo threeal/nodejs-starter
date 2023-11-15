@@ -5,12 +5,6 @@
     "ecmaVersion": 2022,
     "sourceType": "module"
   },
-  "rules": {
-    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-    "id-length": "off",
-    "no-plusplus": "off",
-    "one-var": ["error", "never"]
-  },
   "overrides": [
     {
       "files": ["**/*.mts", "**/*.ts"],
@@ -21,7 +15,6 @@
       },
       "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
       "rules": {
-        "@typescript-eslint/no-magic-numbers": "off",
         "tsdoc/syntax": "error"
       }
     },
