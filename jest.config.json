@@ -9,6 +9,7 @@
     }
   },
   "extensionsToTreatAsEsm": [".ts", ".mts"],
+  "injectGlobals": false,
   "moduleNameMapper": {
     "^(\\.{1,2}/.*)\\.mjs$": "$1.mts"
   },

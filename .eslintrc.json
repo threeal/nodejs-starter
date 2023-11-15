@@ -17,12 +17,6 @@
       "rules": {
         "tsdoc/syntax": "error"
       }
-    },
-    {
-      "files": ["**/*.test.*"],
-      "env": {
-        "jest": true
-      }
     }
   ]
 }

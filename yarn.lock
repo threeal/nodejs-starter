@@ -1063,16 +1063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.8":
-  version: 29.5.8
-  resolution: "@types/jest@npm:29.5.8"
-  dependencies:
-    expect: "npm:^29.0.0"
-    pretty-format: "npm:^29.0.0"
-  checksum: a28e7827ea7e1a2aace6a386868fa6b8402c162d6c71570aed2c29d3745ddc22ceef6899a20643071817905d3c57b670a7992fc8760bff65939351fd4dc481cf
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:^7.0.12":
   version: 7.0.12
   resolution: "@types/json-schema@npm:7.0.12"
@@ -2323,7 +2313,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.0.0, expect@npm:^29.7.0":
+"expect@npm:^29.7.0":
   version: 29.7.0
   resolution: "expect@npm:29.7.0"
   dependencies:
@@ -4405,7 +4395,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.0.0, pretty-format@npm:^29.7.0":
+"pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
   dependencies:
@@ -4834,7 +4824,6 @@ __metadata:
   resolution: "starter@workspace:."
   dependencies:
     "@jest/globals": "npm:^29.7.0"
-    "@types/jest": "npm:^29.5.8"
     "@typescript-eslint/eslint-plugin": "npm:^6.10.0"
     "@typescript-eslint/parser": "npm:^6.10.0"
     eslint: "npm:^8.53.0"

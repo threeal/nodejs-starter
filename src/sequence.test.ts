@@ -1,3 +1,4 @@
+import { it, expect } from "@jest/globals";
 import { fibonacciSequence } from "./sequence.mjs";
 
 it("should generate a fibonacci sequence", () => {
