@@ -60,7 +60,7 @@ jobs:
         run: yarn test
 
       - name: Run bin
-        run: yarn starter --help
+        run: yarn my_fibonacci --help
 
   deploy:
     name: Deploy

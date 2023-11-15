@@ -1,21 +1,23 @@
 {
-  "name": "starter",
-  "version": "0.1.0",
-  "description": "A starter project",
+  "name": "my_fibonacci",
+  "version": "0.0.0",
+  "description": "A starter Node.js package for generating a Fibonacci sequence.",
   "keywords": [
-    "keyword",
-    "other-keyword"
+    "nodejs",
+    "starter",
+    "fibonacci"
   ],
   "homepage": "https://github.com/threeal/nodejs-starter#readme",
   "bugs": {
     "url": "https://github.com/threeal/nodejs-starter/issues",
-    "email": "threeal@github.com"
+    "email": "alfi.maulana.f@gmail.com"
   },
   "repository": "github:threeal/nodejs-starter",
   "license": "Unlicense",
-  "author": "threeal <threeal@github.com>",
+  "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
   "bin": "dist/bin.mjs",
   "files": [
     "dist"
