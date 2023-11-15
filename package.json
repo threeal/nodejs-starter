@@ -16,6 +16,7 @@
   "author": "threeal <threeal@github.com>",
   "type": "module",
   "main": "dist/index.js",
+  "bin": "dist/bin.mjs",
   "files": [
     "dist"
   ],
