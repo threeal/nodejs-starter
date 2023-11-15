@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [Windows, Ubuntu, macOS]
+        os: [windows, ubuntu, macos]
     env:
       NODE_OPTIONS: --experimental-vm-modules
     steps:
