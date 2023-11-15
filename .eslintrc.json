@@ -7,6 +7,7 @@
   },
   "rules": {
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "id-length": "off",
     "one-var": ["error", "never"]
   },
   "overrides": [
