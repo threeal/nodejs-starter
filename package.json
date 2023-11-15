@@ -1,6 +1,6 @@
 {
   "name": "my_fibonacci",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A starter Node.js package for generating a Fibonacci sequence.",
   "keywords": [
     "keyword",
