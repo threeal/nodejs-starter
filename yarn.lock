@@ -4026,6 +4026,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"my_fibonacci@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "my_fibonacci@workspace:."
+  dependencies:
+    "@jest/globals": "npm:^29.7.0"
+    "@types/node": "npm:^20.9.0"
+    "@types/yargs": "npm:^17.0.31"
+    "@typescript-eslint/eslint-plugin": "npm:^6.10.0"
+    "@typescript-eslint/parser": "npm:^6.10.0"
+    eslint: "npm:^8.53.0"
+    eslint-config-prettier: "npm:^9.0.0"
+    eslint-plugin-tsdoc: "npm:^0.2.17"
+    jest: "npm:^29.7.0"
+    nx: "npm:17.0.3"
+    prettier: "npm:^3.0.3"
+    rimraf: "npm:^5.0.5"
+    sort-package-json: "npm:^2.6.0"
+    ts-jest: "npm:^29.1.1"
+    typedoc: "npm:^0.25.3"
+    typescript: "npm:^5.2.2"
+    yargs: "npm:^17.7.2"
+  bin:
+    my_fibonacci: dist/bin.mjs
+  languageName: unknown
+  linkType: soft
+
 "natural-compare@npm:^1.4.0":
   version: 1.4.0
   resolution: "natural-compare@npm:1.4.0"
@@ -4836,32 +4862,6 @@ __metadata:
   checksum: 651c9f87667e077584bbe848acaecc6049bc71979f1e9a46c7b920cad4431c388df0f51b8ad7cfd6eed3db97a2878d0fc8b3122979439ea8bac29c61c95eec8a
   languageName: node
   linkType: hard
-
-"starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "starter@workspace:."
-  dependencies:
-    "@jest/globals": "npm:^29.7.0"
-    "@types/node": "npm:^20.9.0"
-    "@types/yargs": "npm:^17.0.31"
-    "@typescript-eslint/eslint-plugin": "npm:^6.10.0"
-    "@typescript-eslint/parser": "npm:^6.10.0"
-    eslint: "npm:^8.53.0"
-    eslint-config-prettier: "npm:^9.0.0"
-    eslint-plugin-tsdoc: "npm:^0.2.17"
-    jest: "npm:^29.7.0"
-    nx: "npm:17.0.3"
-    prettier: "npm:^3.0.3"
-    rimraf: "npm:^5.0.5"
-    sort-package-json: "npm:^2.6.0"
-    ts-jest: "npm:^29.1.1"
-    typedoc: "npm:^0.25.3"
-    typescript: "npm:^5.2.2"
-    yargs: "npm:^17.7.2"
-  bin:
-    starter: dist/bin.mjs
-  languageName: unknown
-  linkType: soft
 
 "string-length@npm:^4.0.1":
   version: 4.0.2
