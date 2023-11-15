@@ -1107,6 +1107,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/yargs@npm:^17.0.31":
+  version: 17.0.31
+  resolution: "@types/yargs@npm:17.0.31"
+  dependencies:
+    "@types/yargs-parser": "npm:*"
+  checksum: 1e04df99bd0ad8ac8b3748b6ac0e99a9a4efe20b9cd8eab69ac9503fe87ab9bec312ad56982e969cdb0e2c0679431434ad571f6934049adb15fa35b22810c867
+  languageName: node
+  linkType: hard
+
 "@types/yargs@npm:^17.0.8":
   version: 17.0.24
   resolution: "@types/yargs@npm:17.0.24"
@@ -4834,6 +4843,7 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/node": "npm:^20.9.0"
+    "@types/yargs": "npm:^17.0.31"
     "@typescript-eslint/eslint-plugin": "npm:^6.10.0"
     "@typescript-eslint/parser": "npm:^6.10.0"
     eslint: "npm:^8.53.0"
@@ -4847,6 +4857,7 @@ __metadata:
     ts-jest: "npm:^29.1.1"
     typedoc: "npm:^0.25.3"
     typescript: "npm:^5.2.2"
+    yargs: "npm:^17.7.2"
   bin:
     starter: dist/bin.mjs
   languageName: unknown
@@ -5386,7 +5397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.3.1, yargs@npm:^17.6.2":
+"yargs@npm:^17.3.1, yargs@npm:^17.6.2, yargs@npm:^17.7.2":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:

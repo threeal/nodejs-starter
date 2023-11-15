@@ -29,9 +29,13 @@
     "sort": "sort-package-json",
     "test": "jest"
   },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@types/node": "^20.9.0",
+    "@types/yargs": "^17.0.31",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",
