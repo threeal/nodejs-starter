@@ -15,3 +15,7 @@ Kickstart your [Node.js](https://nodejs.org/en) project using this [GitHub repos
 - Preconfigured [GitHub Actions](https://github.com/features/actions) workflow for CI.
 - Documentation deployment on [GitHub Pages](https://pages.github.com/).
 - [Dependabot](https://docs.github.com/en/code-security/dependabot) support for dependency updates.
+
+## Usage
+
+Refer to [this wiki](https://github.com/threeal/nodejs-starter/wiki) for information on how to use this template.
