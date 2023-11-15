@@ -1,27 +1,20 @@
 {
   "root": true,
-  "extends": ["eslint:all", "prettier"],
+  "extends": ["eslint:recommended", "prettier"],
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module"
   },
-  "rules": {
-    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-    "id-length": "off",
-    "no-plusplus": "off",
-    "one-var": ["error", "never"]
-  },
   "overrides": [
     {
       "files": ["**/*.mts", "**/*.ts"],
-      "extends": ["plugin:@typescript-eslint/all", "prettier"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": ["tsconfig.eslint.json"]
       },
       "plugins": ["@typescript-eslint", "eslint-plugin-tsdoc"],
       "rules": {
-        "@typescript-eslint/no-magic-numbers": "off",
         "tsdoc/syntax": "error"
       }
     },
