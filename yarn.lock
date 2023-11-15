@@ -1087,13 +1087,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ping@npm:^0.4.4":
-  version: 0.4.4
-  resolution: "@types/ping@npm:0.4.4"
-  checksum: 8446425a8a71d374b19c9acd506ebb0bf35688fef3d8ec70e2c9204259e78c46515ed59202a997ed6efd7a5d6d4f3a5d5140278021dfad94e119ef3cf855504c
-  languageName: node
-  linkType: hard
-
 "@types/semver@npm:^7.5.0":
   version: 7.5.0
   resolution: "@types/semver@npm:7.5.0"
@@ -4380,13 +4373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ping@npm:^0.4.4":
-  version: 0.4.4
-  resolution: "ping@npm:0.4.4"
-  checksum: e41d5470aee2648a70ab116181176f1065e617b6e537c091dc5f53d85df338a0f06f4708879e2c6bc238d87b7c692f40dfd4aebc13cdb8e0ab358c9ac395772d
-  languageName: node
-  linkType: hard
-
 "pirates@npm:^4.0.4":
   version: 4.0.6
   resolution: "pirates@npm:4.0.6"
@@ -4849,7 +4835,6 @@ __metadata:
   dependencies:
     "@jest/globals": "npm:^29.7.0"
     "@types/jest": "npm:^29.5.8"
-    "@types/ping": "npm:^0.4.4"
     "@typescript-eslint/eslint-plugin": "npm:^6.10.0"
     "@typescript-eslint/parser": "npm:^6.10.0"
     eslint: "npm:^8.53.0"
@@ -4857,7 +4842,6 @@ __metadata:
     eslint-plugin-tsdoc: "npm:^0.2.17"
     jest: "npm:^29.7.0"
     nx: "npm:17.0.3"
-    ping: "npm:^0.4.4"
     prettier: "npm:^3.0.3"
     rimraf: "npm:^5.0.5"
     sort-package-json: "npm:^2.6.0"
