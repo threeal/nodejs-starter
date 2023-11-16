@@ -23,12 +23,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "check": "sort-package-json && prettier --write . !dist && eslint src",
     "doc": "typedoc src/index.mts",
-    "format": "prettier --write . !dist",
-    "lint": "eslint src",
-    "prepack": "nx build",
-    "sort": "sort-package-json",
+    "prepack": "tsc",
     "test": "jest"
   },
   "dependencies": {

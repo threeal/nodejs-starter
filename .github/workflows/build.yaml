@@ -56,11 +56,11 @@ jobs:
       - name: Install Dependencies
         run: corepack enable && yarn install
 
-      - name: Check Changes
-        run: git diff --exit-code HEAD
+      - name: Check Package
+        run: yarn check && git diff --exit-code HEAD
 
       - name: Test Package
-        run: yarn nx test
+        run: yarn test
 
   generate-docs:
     name: Generate Documentation
