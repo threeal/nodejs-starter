@@ -28,6 +28,7 @@
     "doc": "typedoc src/index.mts",
     "format": "prettier --write . !dist",
     "lint": "eslint src",
+    "prepack": "nx build",
     "sort": "sort-package-json",
     "test": "jest"
   },
