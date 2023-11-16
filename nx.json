@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "doc", "format", "lint", "sort"]
+        "cacheableOperations": ["doc", "format", "lint", "sort"]
       }
     }
   },
@@ -11,14 +11,6 @@
     "dependencies": ["{projectRoot}/.pnp.*", "{projectRoot}/package.json"]
   },
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["lint"],
-      "inputs": [
-        "dependencies",
-        "{projectRoot}/src/**/*",
-        "{projectRoot}/tsconfig.json"
-      ]
-    },
     "doc": {
       "dependsOn": ["lint"],
       "inputs": ["dependencies", "{projectRoot}/src/**/*"]

@@ -23,11 +23,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
     "doc": "typedoc src/index.mts",
     "format": "prettier --write . !dist",
     "lint": "eslint src",
-    "prepack": "nx build",
+    "prepack": "tsc",
     "sort": "sort-package-json",
     "test": "jest"
   },
