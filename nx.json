@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["doc", "format", "lint", "sort"]
+        "cacheableOperations": ["check", "doc"]
       }
     }
   },
@@ -11,28 +11,15 @@
     "dependencies": ["{projectRoot}/.pnp.*", "{projectRoot}/package.json"]
   },
   "targetDefaults": {
-    "doc": {
-      "dependsOn": ["lint"],
-      "inputs": ["dependencies", "{projectRoot}/src/**/*"]
-    },
-    "format": {
-      "dependsOn": ["sort"],
+    "check": {
       "inputs": ["dependencies", "{projectRoot}/**/*", "{projectRoot}/**/.*"]
     },
-    "lint": {
-      "dependsOn": ["format"],
-      "inputs": [
-        "dependencies",
-        "{projectRoot}/src/**/*",
-        "{projectRoot}/test/**/*",
-        "{projectRoot}/.eslintrc.json"
-      ]
-    },
-    "sort": {
-      "inputs": ["dependencies"]
+    "doc": {
+      "dependsOn": ["check"],
+      "inputs": ["dependencies", "{projectRoot}/src/**/*"]
     },
     "test": {
-      "dependsOn": ["lint"]
+      "dependsOn": ["check"]
     }
   }
 }
