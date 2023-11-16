@@ -24,7 +24,6 @@
   ],
   "scripts": {
     "build": "tsc",
-    "clean": "rimraf dist",
     "doc": "typedoc src/index.mts",
     "format": "prettier --write . !dist",
     "lint": "eslint src",
