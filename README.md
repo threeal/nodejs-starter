@@ -10,7 +10,6 @@ The Node.js Starter is a [GitHub repository template](https://docs.github.com/en
 ## Key Features
 
 - [Yarn](https://yarnpkg.com/) for project and dependencies management.
-- [Nx](https://nx.dev/) for build system flow control.
 - [Jest](https://jestjs.io/) for testing and coverage checks.
 - Documentation generation with [TypeDoc](https://typedoc.org/).
 - Consistent source files formatting with [Prettier](https://prettier.io/).
