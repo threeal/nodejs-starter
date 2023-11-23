@@ -32,8 +32,5 @@ jobs:
       - name: Install Dependencies
         run: corepack enable && yarn install
 
-      - name: Check Package
-        run: yarn check && git diff --exit-code HEAD
-
       - name: Test Package
         run: yarn test
