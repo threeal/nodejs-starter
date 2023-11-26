@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "check": "sort-package-json && prettier --write . && eslint src",
+    "check": "prettier --write . && eslint src package.json",
     "doc": "typedoc src/index.mts",
     "prepack": "tsc",
     "test": "jest"
@@ -39,10 +39,10 @@
     "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-json-files": "^4.1.0",
     "eslint-plugin-tsdoc": "^0.2.17",
     "jest": "^29.7.0",
     "prettier": "^3.1.0",
-    "sort-package-json": "^2.6.0",
     "ts-jest": "^29.1.1",
     "typedoc": "^0.25.3",
     "typescript": "^5.3.2"
