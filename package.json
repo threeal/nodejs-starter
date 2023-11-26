@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "check": "prettier --write . && eslint src package.json",
+    "check": "prettier --write . && eslint --ignore-path .gitignore .",
     "doc": "typedoc src/index.mts",
     "prepack": "tsc",
     "test": "jest"
