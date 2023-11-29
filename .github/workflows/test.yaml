@@ -21,6 +21,9 @@ jobs:
       - name: Install Dependencies
         run: corepack enable && yarn install
 
+      - name: Check Yarn Version
+        run: yarn set version stable && git diff --exit-code HEAD
+
       - name: Check Format
         run: yarn format && git diff --exit-code HEAD
 
