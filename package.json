@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "doc": "typedoc src/index.mts",
-    "fix": "prettier --write . && eslint --fix --ignore-path .gitignore .",
+    "format": "prettier --write .",
+    "lint": "eslint --ignore-path .gitignore .",
     "prepack": "tsc",
     "test": "jest"
   },

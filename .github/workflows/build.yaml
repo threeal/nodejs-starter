@@ -21,8 +21,11 @@ jobs:
       - name: Install Dependencies
         run: corepack enable && yarn install
 
-      - name: Fix Package
-        run: yarn fix && git diff --exit-code HEAD
+      - name: Check Format
+        run: yarn format && git diff --exit-code HEAD
+
+      - name: Check Lint
+        run: yarn lint
 
       - name: Create Package
         run: yarn pack
