@@ -8,13 +8,9 @@
       "statements": 100
     }
   },
-  "extensionsToTreatAsEsm": [".ts", ".mts"],
   "injectGlobals": false,
   "moduleNameMapper": {
-    "^(\\.{1,2}/.*)\\.mjs$": "$1.mts"
+    "^(\\.{1,2}/.*)\\.mjs$": "<rootDir>/dist/$1.mjs"
   },
-  "testMatch": ["**/*.test.ts"],
-  "transform": {
-    "^.+\\.m?ts$": ["ts-jest", { "useESM": true }]
-  }
+  "testMatch": ["**/*.test.js"]
 }
