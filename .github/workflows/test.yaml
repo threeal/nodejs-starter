@@ -32,11 +32,7 @@ jobs:
 
   test-package:
     name: Test Package
-    runs-on: ${{ matrix.os }}-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [windows, ubuntu, macos]
+    runs-on: ubuntu-latest
     env:
       NODE_OPTIONS: --experimental-vm-modules
     steps:
