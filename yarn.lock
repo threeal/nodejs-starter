@@ -3709,7 +3709,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "my_fibonacci@workspace:."
   dependencies:
-    "@jest/globals": "npm:^29.7.0"
     "@types/node": "npm:^20.10.0"
     "@types/yargs": "npm:^17.0.32"
     "@typescript-eslint/eslint-plugin": "npm:^6.13.1"
