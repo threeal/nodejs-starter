@@ -5,7 +5,6 @@
     "moduleResolution": "NodeNext",
     "declaration": true,
     "outDir": "dist",
-    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2022"],
