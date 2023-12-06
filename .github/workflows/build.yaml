@@ -22,10 +22,10 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
-        run: yarn install
+        run: corepack yarn install
 
       - name: Create Package
-        run: yarn pack
+        run: corepack yarn pack
 
       - name: Upload Package as Artifact
         uses: actions/upload-artifact@v3.1.3
@@ -49,7 +49,7 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
-        run: yarn install
+        run: corepack yarn install
 
       - name: Generate Documentation
-        run: yarn doc
+        run: corepack yarn doc
