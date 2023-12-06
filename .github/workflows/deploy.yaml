@@ -34,10 +34,10 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
-        run: yarn install
+        run: corepack yarn install
 
       - name: Generate Documentation
-        run: yarn doc
+        run: corepack yarn doc
 
       - name: Upload Documentation
         uses: actions/upload-pages-artifact@v2.0.0

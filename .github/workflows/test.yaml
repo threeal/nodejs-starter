@@ -16,7 +16,7 @@ jobs:
         run: corepack enable yarn
 
       - name: Check Yarn Version
-        run: yarn set version stable && git diff --exit-code HEAD
+        run: corepack yarn set version stable && git diff --exit-code HEAD
 
       - name: Cache Dependencies
         uses: actions/cache@v3.3.2
@@ -25,13 +25,13 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
-        run: yarn install
+        run: corepack yarn install
 
       - name: Check Format
-        run: yarn format && git diff --exit-code HEAD
+        run: corepack yarn format && git diff --exit-code HEAD
 
       - name: Check Lint
-        run: yarn lint
+        run: corepack yarn lint
 
   test-package:
     name: Test Package
@@ -55,9 +55,9 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install Dependencies
-        run: yarn install
+        run: corepack yarn install
 
       - name: Test Package
-        run: yarn test
+        run: corepack yarn test
         env:
           NODE_OPTIONS: --experimental-vm-modules
