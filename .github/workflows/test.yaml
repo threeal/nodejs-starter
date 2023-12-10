@@ -16,10 +16,14 @@ jobs:
         uses: threeal/yarn-install-action@v1.0.0
 
       - name: Check Yarn Version
-        run: corepack yarn set version stable && git diff --exit-code HEAD
+        run: |
+          corepack yarn set version stable
+          git diff --exit-code HEAD
 
       - name: Check Format
-        run: corepack yarn format && git diff --exit-code HEAD
+        run: |
+          corepack yarn format
+          git diff --exit-code HEAD
 
       - name: Check Lint
         run: corepack yarn lint
