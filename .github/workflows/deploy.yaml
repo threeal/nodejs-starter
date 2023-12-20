@@ -36,7 +36,7 @@ jobs:
         run: corepack yarn doc
 
       - name: Upload Documentation
-        uses: actions/upload-pages-artifact@v2.0.0
+        uses: actions/upload-pages-artifact@v3.0.0
         with:
           path: docs
 
