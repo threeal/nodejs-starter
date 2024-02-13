@@ -7,17 +7,11 @@
   },
   "overrides": [
     {
-      "files": ["**/*.[cm]ts"],
+      "files": ["**/*.*([cm])ts"],
       "extends": ["plugin:@typescript-eslint/recommended"],
       "plugins": ["eslint-plugin-tsdoc"],
       "rules": {
         "tsdoc/syntax": "error"
-      }
-    },
-    {
-      "files": ["**/*.test.*"],
-      "env": {
-        "jest": true
       }
     },
     {

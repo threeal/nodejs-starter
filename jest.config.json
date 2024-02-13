@@ -9,6 +9,9 @@
     }
   },
   "moduleNameMapper": {
-    "^(\\.{1,2}/.*)\\.mjs$": "<rootDir>/dist/$1.mjs"
+    "^(\\.{1,2}/.*)\\.mjs$": "$1.mts"
+  },
+  "transform": {
+    "^.+\\.m?ts$": ["ts-jest", { "useESM": true }]
   }
 }
