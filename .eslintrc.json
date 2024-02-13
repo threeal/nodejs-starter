@@ -7,7 +7,7 @@
   },
   "overrides": [
     {
-      "files": ["**/*.[cm]ts"],
+      "files": ["**/*.*([cm])ts"],
       "extends": ["plugin:@typescript-eslint/recommended"],
       "plugins": ["eslint-plugin-tsdoc"],
       "rules": {
