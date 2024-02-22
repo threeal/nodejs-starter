@@ -16,9 +16,9 @@
   "license": "Unlicense",
   "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
   "type": "module",
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.mts",
-  "bin": "dist/bin.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": "dist/bin.js",
   "files": [
     "dist"
   ],

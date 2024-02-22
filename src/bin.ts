@@ -2,7 +2,7 @@
 
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import { fibonacciSequence } from "./sequence.mjs";
+import { fibonacciSequence } from "./sequence.js";
 
 yargs(hideBin(process.argv))
   .scriptName("my_fibonacci")

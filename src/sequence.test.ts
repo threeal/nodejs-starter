@@ -1,4 +1,4 @@
-import { fibonacciSequence } from "./sequence.mjs";
+import { fibonacciSequence } from "./sequence.js";
 
 it("should generate a fibonacci sequence", () => {
   expect(fibonacciSequence(1)).toStrictEqual([1]);
