@@ -13,5 +13,6 @@
   },
   "transform": {
     "^.+\\.ts$": ["ts-jest", { "useESM": true }]
-  }
+  },
+  "verbose": true
 }
