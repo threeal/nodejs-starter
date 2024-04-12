@@ -6,6 +6,6 @@ export default [
   ...tseslint.configs.recommended,
   ...tseslint.configs.stylistic,
   {
-    ignores: [".*", "coverage", "dist"],
+    ignores: [".*", "dist"],
   },
 ];
