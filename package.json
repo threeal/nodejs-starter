@@ -43,7 +43,7 @@
     "ts-jest": "^29.2.3",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.1"
+    "typescript-eslint": "^7.17.0"
   },
   "packageManager": "yarn@4.3.1"
 }
