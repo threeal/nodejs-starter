@@ -20,6 +20,17 @@ jobs:
       - name: Setup Yarn
         uses: threeal/setup-yarn-action@v2.0.0
 
+      - name: Check Formatting
+        run: |
+          yarn format
+          git diff --exit-code HEAD
+
+      - name: Check Lint
+        run: yarn lint
+
+      - name: Test Package
+        run: yarn test
+
       - name: Build Package
         run: yarn pack
 
