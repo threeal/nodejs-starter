@@ -5,8 +5,8 @@ on:
   push:
     branches: [main]
 jobs:
-  build-package:
-    name: Build Package
+  build-library:
+    name: Build Library
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Project
@@ -20,13 +20,23 @@ jobs:
       - name: Setup Yarn
         uses: threeal/setup-yarn-action@v2.0.0
 
-      - name: Build Package
+      - name: Check Formatting
+        run: |
+          yarn format
+          git diff --exit-code HEAD
+
+      - name: Check Lint
+        run: yarn lint
+
+      - name: Test Library
+        run: yarn test
+
+      - name: Package Library
         run: yarn pack
 
       - name: Upload Package
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: package
           path: package.tgz
           if-no-files-found: error
           overwrite: true
