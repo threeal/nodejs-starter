@@ -1,6 +1,8 @@
 # Node.js Starter
 
-The Node.js Starter is a [GitHub repository template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that provides a minimalistic boilerplate to kickstart your [Node.js](https://nodejs.org/en) project. This template offers a streamlined foundation, complete with predefined file structures, essential tools, and recommended settings, ensuring a swift and efficient start to your Node.js development journey.
+A minimalistic template for starting a new [Node.js](https://nodejs.org/en) project.
+
+This template provides a basic Node.js project containing a sample library written in [TypeScript](https://www.typescriptlang.org/), with support for formatting, linting, testing, and continuous integration.
 
 ## Key Features
 
