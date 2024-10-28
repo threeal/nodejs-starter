@@ -6,12 +6,10 @@ This template provides a basic Node.js project containing a sample library writt
 
 ## Key Features
 
-- [Yarn](https://yarnpkg.com/) for project and dependencies management.
-- [Jest](https://jestjs.io/) for testing and coverage checks.
-- Consistent source files formatting with [Prettier](https://prettier.io/).
-- Static analysis and linting with [ESLint](https://eslint.org/).
-- Preconfigured [GitHub Actions](https://github.com/features/actions) workflow for CI.
-- [Dependabot](https://docs.github.com/en/code-security/dependabot) support for dependency updates.
+- Minimal Node.js project written in TypeScript with [ESM](https://nodejs.org/api/esm.html) support.
+- Uses [Yarn](https://yarnpkg.com/) as the package manager, with [Plug'n'Play](https://yarnpkg.com/features/pnp) support.
+- Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Jest](https://jestjs.io/).
+- Preconfigured workflows for [Dependabot](https://docs.github.com/en/code-security/dependabot) and [GitHub Actions](https://github.com/features/actions).
 
 ## Usage
 
