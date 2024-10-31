@@ -1172,12 +1172,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.8.1":
-  version: 22.8.1
-  resolution: "@types/node@npm:22.8.1"
+"@types/node@npm:^22.8.5":
+  version: 22.8.5
+  resolution: "@types/node@npm:22.8.5"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10c0/83550fdf72a7db5b55eceac3f4fb038844eaee20202bdd2297a8248370cfa08317bda1605b781a8043eda4f173b75e73632e652fc85509eb14dfef78fa17337f
+  checksum: 10c0/5e43553026c83f18bfa381d35c8fd608e69d12d0f0fe4601e8bb98b651a3b240be9d66c1f2f4decdbebb41d55b18e89238b02f3992d820d89801b9b3625ba8ab
   languageName: node
   linkType: hard
 
@@ -3736,7 +3736,7 @@ __metadata:
   dependencies:
     "@eslint/js": "npm:^9.13.0"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^22.8.1"
+    "@types/node": "npm:^22.8.5"
     "@types/yargs": "npm:^17.0.33"
     eslint: "npm:^9.13.0"
     jest: "npm:^29.7.0"
