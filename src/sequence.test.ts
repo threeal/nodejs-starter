@@ -1,3 +1,4 @@
+import { it, expect } from "vitest";
 import { fibonacciSequence } from "./sequence.js";
 
 it("should generate a fibonacci sequence", () => {

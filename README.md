@@ -8,7 +8,7 @@ This template provides a basic Node.js project containing a sample library writt
 
 - Minimal Node.js project written in TypeScript with [ESM](https://nodejs.org/api/esm.html) support.
 - Uses [Yarn](https://yarnpkg.com/) as the package manager, with [Plug'n'Play](https://yarnpkg.com/features/pnp) support.
-- Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Jest](https://jestjs.io/).
+- Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Vitest](https://vitest.dev/).
 - Preconfigured workflows for [Dependabot](https://docs.github.com/en/code-security/dependabot) and [GitHub Actions](https://github.com/features/actions).
 
 ## Usage
@@ -82,7 +82,7 @@ yarn build
 
 ### Testing the Library
 
-Test files in this template are named `*.test.ts` and typically correspond to the source files being tested. This template uses [Jest](https://jestjs.io/) as the testing framework. For more information on testing with Jest, refer to [this documentation](https://jestjs.io/docs/getting-started).
+Test files in this template are named `*.test.ts` and typically correspond to the source files being tested. This template uses [Vitest](https://vitest.dev/) as the testing framework. For more information on testing with Vitest, refer to [this documentation](https://vitest.dev/guide/).
 
 After creating your test files, run tests with:
 
