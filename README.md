@@ -7,7 +7,7 @@ This template provides a basic Node.js project containing a sample library writt
 ## Key Features
 
 - Minimal Node.js project written in TypeScript with [ESM](https://nodejs.org/api/esm.html) support.
-- Uses [Yarn](https://yarnpkg.com/) as the package manager, with [Plug'n'Play](https://yarnpkg.com/features/pnp) support.
+- Uses [pnpm](https://pnpm.io//) as the package manager.
 - Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Vitest](https://vitest.dev/).
 - Preconfigured workflows for [Dependabot](https://docs.github.com/en/code-security/dependabot) and [GitHub Actions](https://github.com/features/actions).
 
@@ -42,19 +42,13 @@ It is recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage the Node
 nvm install
 ```
 
-This template uses [Yarn](https://yarnpkg.com/) with [Plug'n'Play](https://yarnpkg.com/features/pnp) support as the package manager. If Yarn is not yet enabled, run the following command:
+This template uses [pnpm](https://pnpm.io/) as the package manager. If pnpm is not installed, follow [this guide](https://pnpm.io/installation) to install it. Then, install the project dependencies with:
 
 ```sh
-corepack enable yarn
+pnpm install
 ```
 
-Then, install the project dependencies with:
-
-```sh
-yarn install
-```
-
-For more information on Yarn, such as adding dependencies or running tools, refer to [this documentation](https://yarnpkg.com/getting-started).
+For more information on pnpm, including adding dependencies or running tools, refer to [this documentation](https://pnpm.io/pnpm-cli).
 
 ### Developing the Library
 
@@ -65,19 +59,19 @@ If your project doesn’t need an executable, you can remove `src/bin.ts` and th
 Once the code is written, format it with:
 
 ```sh
-yarn format
+pnpm format
 ```
 
 Then, check linting with:
 
 ```sh
-yarn lint
+pnpm lint
 ```
 
 To ensure the source code compiles correctly, use:
 
 ```sh
-yarn build
+pnpm build
 ```
 
 ### Testing the Library
@@ -87,7 +81,7 @@ Test files in this template are named `*.test.ts` and typically correspond to th
 After creating your test files, run tests with:
 
 ```sh
-yarn test
+pnpm test
 ```
 
 ### Release the Library
@@ -95,7 +89,7 @@ yarn test
 When the project is complete, package the library by running:
 
 ```sh
-yarn pack
+pnpm pack
 ```
 
 This will create a `package.tgz` file, which can be included in the release. Ensure the project is at the correct version and has been pushed to the upstream repository. For more information on releasing a project, refer to [this documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
