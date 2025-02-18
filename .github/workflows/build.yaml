@@ -17,22 +17,25 @@ jobs:
         with:
           node-version-file: .nvmrc
 
-      - name: Setup Yarn
-        uses: threeal/setup-yarn-action@v2.0.0
+      - name: Setup pnpm
+        uses: threeal/setup-pnpm-action@v1.0.0
+
+      - name: Install Dependencies
+        run: pnpm install
 
       - name: Check Formatting
         run: |
-          yarn format
+          pnpm format
           git diff --exit-code HEAD
 
       - name: Check Lint
-        run: yarn lint
+        run: pnpm lint
 
       - name: Test Library
-        run: yarn test
+        run: pnpm test
 
       - name: Package Library
-        run: yarn pack
+        run: pnpm pack --out package.tgz
 
       - name: Upload Package
         uses: actions/upload-artifact@v4.6.0
