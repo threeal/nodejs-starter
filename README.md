@@ -36,12 +36,6 @@ To replace the sample information in this template with your new project informa
 
 ### Set Up Tools
 
-It is recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage the Node.js version in the project. By default, this template uses the Node.js version specified in the [`.nvmrc`](./.nvmrc) file. Use the following command to install and use the correct Node.js version with nvm:
-
-```sh
-nvm install
-```
-
 This template uses [pnpm](https://pnpm.io/) as the package manager. If pnpm is not installed, follow [this guide](https://pnpm.io/installation) to install it. Then, install the project dependencies with:
 
 ```sh
