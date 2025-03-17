@@ -31,11 +31,4 @@ jobs:
         run: pnpm test
 
       - name: Package Library
-        run: pnpm pack --out package.tgz
-
-      - name: Upload Package
-        uses: actions/upload-artifact@v4.6.1
-        with:
-          path: package.tgz
-          if-no-files-found: error
-          overwrite: true
+        run: pnpm pack

@@ -69,4 +69,4 @@ When the project is complete, package the library by running:
 pnpm pack
 ```
 
-This will create a `package.tgz` file, which can be included in the release. Ensure the project is at the correct version and has been pushed to the upstream repository. For more information on releasing a project, refer to [this documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
+This will create a tarball file, which can be included in the release. Ensure the project is at the correct version and has been pushed to the upstream repository. For more information on releasing a project, refer to [this documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
