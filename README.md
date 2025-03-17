@@ -7,8 +7,9 @@ This template provides a basic Node.js project containing a sample library writt
 ## Key Features
 
 - Minimal Node.js project written in TypeScript with [ESM](https://nodejs.org/api/esm.html) support.
-- Uses [pnpm](https://pnpm.io//) as the package manager.
+- Uses [pnpm](https://pnpm.io/) as the package manager.
 - Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Vitest](https://vitest.dev/).
+- Fixes formatting and linting during pre-commit hooks using [Lefthook](https://lefthook.dev/).
 - Preconfigured workflows for [Dependabot](https://docs.github.com/en/code-security/dependabot) and [GitHub Actions](https://github.com/features/actions).
 
 ## Usage
