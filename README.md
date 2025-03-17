@@ -7,8 +7,9 @@ This template provides a basic Node.js project containing a sample library writt
 ## Key Features
 
 - Minimal Node.js project written in TypeScript with [ESM](https://nodejs.org/api/esm.html) support.
-- Uses [pnpm](https://pnpm.io//) as the package manager.
+- Uses [pnpm](https://pnpm.io/) as the package manager.
 - Supports formatting with [Prettier](https://prettier.io/), linting with [ESLint](https://eslint.org/), and testing with [Vitest](https://vitest.dev/).
+- Fixes formatting and linting during pre-commit hooks using [Lefthook](https://lefthook.dev/).
 - Preconfigured workflows for [Dependabot](https://docs.github.com/en/code-security/dependabot) and [GitHub Actions](https://github.com/features/actions).
 
 ## Usage
@@ -49,24 +50,6 @@ For more information on pnpm, including adding dependencies or running tools, re
 This template provides two components: the library itself ([`src/index.ts`](./src/index.ts)) and an executable entry point ([`src/bin.ts`](./src/bin.ts)). Write code according to your project requirements. If you're new to [TypeScript](https://www.typescriptlang.org/), refer to [this documentation](https://www.typescriptlang.org/docs/) for guidance.
 
 If your project doesn’t need an executable, you can remove `src/bin.ts` and the `bin` entry from the [`package.json`](./package.json) file.
-
-Once the code is written, format it with:
-
-```sh
-pnpm format
-```
-
-Then, check linting with:
-
-```sh
-pnpm lint
-```
-
-To ensure the source code compiles correctly, use:
-
-```sh
-pnpm build
-```
 
 ### Testing the Library
 
