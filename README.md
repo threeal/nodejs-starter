@@ -51,24 +51,6 @@ This template provides two components: the library itself ([`src/index.ts`](./sr
 
 If your project doesn’t need an executable, you can remove `src/bin.ts` and the `bin` entry from the [`package.json`](./package.json) file.
 
-Once the code is written, format it with:
-
-```sh
-pnpm format
-```
-
-Then, check linting with:
-
-```sh
-pnpm lint
-```
-
-To ensure the source code compiles correctly, use:
-
-```sh
-pnpm build
-```
-
 ### Testing the Library
 
 Test files in this template are named `*.test.ts` and typically correspond to the source files being tested. This template uses [Vitest](https://vitest.dev/) as the testing framework. For more information on testing with Vitest, refer to [this documentation](https://vitest.dev/guide/).
