@@ -11,8 +11,9 @@ pre-commit:
       run: pnpm tsc --noEmit
       glob:
         - src/*.ts
-        - tsconfig.json
+        - .npmrc
         - pnpm-lock.yaml
+        - tsconfig.json
       exclude:
         - src/*.test.ts
 
