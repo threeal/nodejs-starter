@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "prepack": "tsc",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "dependencies": {
     "yargs": "^17.7.2"
