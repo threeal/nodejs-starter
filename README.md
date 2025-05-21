@@ -47,7 +47,7 @@ For more information on pnpm, including adding dependencies or running tools, re
 
 ### Developing the Library
 
-This template provides two components: the library itself ([`src/index.ts`](./src/index.ts)) and an executable entry point ([`src/bin.ts`](./src/bin.ts)). Write code according to your project requirements. If you're new to [TypeScript](https://www.typescriptlang.org/), refer to [this documentation](https://www.typescriptlang.org/docs/) for guidance.
+This template provides two components: the library itself ([`src/lib.ts`](./src/lib.ts)) and an executable entry point ([`src/bin.ts`](./src/bin.ts)). Write code according to your project requirements. If you're new to [TypeScript](https://www.typescriptlang.org/), refer to [this documentation](https://www.typescriptlang.org/docs/) for guidance.
 
 If your project doesn’t need an executable, you can remove `src/bin.ts` and the `bin` entry from the [`package.json`](./package.json) file.
 

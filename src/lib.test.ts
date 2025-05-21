@@ -1,5 +1,5 @@
 import { it, expect } from "vitest";
-import { fibonacciSequence } from "./sequence.js";
+import { fibonacciSequence } from "./lib.js";
 
 it("should generate a fibonacci sequence", () => {
   expect(fibonacciSequence(1)).toStrictEqual([1]);
