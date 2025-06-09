@@ -22,7 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "tsc",
+    "prepack": "tsc -p tsconfig.build.json",
     "start": "vite-node src/bin.ts",
     "test": "vitest run"
   },
