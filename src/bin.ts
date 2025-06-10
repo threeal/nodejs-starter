@@ -8,7 +8,7 @@ program
   .version("0.0.0")
   .description("Generate a Fibonacci sequence up to the given number of terms.")
   .argument("<n>", "The number of terms", parseInt)
-  .action((n) => {
+  .action((n: number) => {
     const sequence = fibonacciSequence(n);
     process.stdout.write(`${sequence.join(" ")}\n`);
   })
