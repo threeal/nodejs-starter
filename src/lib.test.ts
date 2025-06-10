@@ -1,4 +1,4 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { fibonacciSequence } from "./lib.js";
 
 it("should generate a fibonacci sequence", () => {
