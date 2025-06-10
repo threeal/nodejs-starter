@@ -4,7 +4,7 @@ export default defineConfig({
   test: {
     coverage: {
       enabled: true,
-      reporter: ["text"],
+      reporter: "text",
       thresholds: { 100: true },
     },
   },
