@@ -1,10 +1,9 @@
 {
-  "extends": "./tsconfig",
+  "extends": "@tsconfig/node24",
   "include": ["src"],
   "exclude": ["**/*.test.*"],
   "compilerOptions": {
     "declaration": true,
-    "noEmit": false,
     "outDir": "dist"
   }
 }
