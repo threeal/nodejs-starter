@@ -5,10 +5,10 @@ pre-commit:
       run: pnpm install
 
     - name: fix formatting
-      run: pnpm prettier --write --ignore-unknown {staged_files}
+      run: pnpm prettier --write .
 
     - name: fix lint
-      run: pnpm eslint --no-warn-ignored --fix {staged_files}
+      run: pnpm eslint --fix
 
     - name: check types
       run: pnpm tsc
