@@ -9,7 +9,7 @@ jobs:
     name: Build Library
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout Project
+      - name: Checkout project
         uses: actions/checkout@v6.0.2
 
       - name: Setup pnpm
@@ -17,20 +17,20 @@ jobs:
         with:
           version: 10.33.4
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: pnpm install
 
-      - name: Check Types
+      - name: Check types
         run: pnpm tsc
 
-      - name: Test Library
+      - name: Test library
         run: pnpm test
 
-      - name: Check Formatting
+      - name: Check formatting
         run: pnpm prettier --check .
 
-      - name: Check Lint
+      - name: Check lint
         run: pnpm eslint
 
-      - name: Package Library
+      - name: Package library
         run: pnpm pack
