@@ -3,7 +3,9 @@
   "include": ["src"],
   "exclude": ["**/*.test.*"],
   "compilerOptions": {
+    "rootDir": "src",
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "types": ["node"]
   }
 }
