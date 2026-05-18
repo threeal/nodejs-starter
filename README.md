@@ -4,7 +4,7 @@ A minimal [Node.js](https://nodejs.org/en) project template written in [TypeScri
 
 ## What's Included
 
-- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [Commander.js](https://github.com/tj/commander.js)
+- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [CAC](https://github.com/cacjs/cac)
 - **[pnpm](https://pnpm.io/)** as the package manager
 - **Formatting** with [Prettier](https://prettier.io/) and **linting** with [ESLint](https://eslint.org/)
 - **Testing** with [Vitest](https://vitest.dev/) — 100% code coverage required

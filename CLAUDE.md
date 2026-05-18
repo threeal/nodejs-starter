@@ -30,7 +30,7 @@ pnpm start             # Run CLI directly via jiti (no compile step needed)
 This is a minimal Node.js library + CLI starter template written in TypeScript targeting Node 24 (ESM).
 
 - **`src/lib.ts`** — The library's public API (currently a Fibonacci sequence generator as a placeholder example).
-- **`src/bin.ts`** — CLI entry point built with Commander.js that wraps the library.
+- **`src/bin.ts`** — CLI entry point built with CAC that wraps the library.
 - **`src/*.test.ts`** — Vitest test files co-located with source.
 
 ### Build outputs
