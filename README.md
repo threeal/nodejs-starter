@@ -45,6 +45,12 @@ pnpm install
 
 For more information on pnpm, including adding dependencies or running tools, refer to [this documentation](https://pnpm.io/pnpm-cli).
 
+This template also uses [Lefthook](https://lefthook.dev/) to manage Git hooks. Lefthook is an external tool that must be installed independently — refer to [this guide](https://lefthook.dev/installation/) for installation instructions. Once installed, set up the Git hooks with:
+
+```sh
+lefthook install
+```
+
 ### Developing the Library
 
 This template provides two components: the library itself ([`src/lib.ts`](./src/lib.ts)) and an executable entry point ([`src/bin.ts`](./src/bin.ts)). Write code according to your project requirements. If you're new to [TypeScript](https://www.typescriptlang.org/), refer to [this documentation](https://www.typescriptlang.org/docs/) for guidance.
