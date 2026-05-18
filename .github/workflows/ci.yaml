@@ -1,15 +1,15 @@
-name: Build
+name: CI
 on:
   workflow_dispatch:
   pull_request:
   push:
     branches: [main]
 jobs:
-  build-library:
-    name: Build Library
+  build:
+    name: Build
     runs-on: ubuntu-24.04
     steps:
-      - name: Checkout project
+      - name: Checkout
         uses: actions/checkout@v6.0.2
 
       - name: Setup pnpm
@@ -23,7 +23,7 @@ jobs:
       - name: Check types
         run: pnpm tsc
 
-      - name: Test library
+      - name: Test
         run: pnpm test
 
       - name: Check formatting
@@ -32,5 +32,5 @@ jobs:
       - name: Check lint
         run: pnpm eslint
 
-      - name: Package library
+      - name: Package
         run: pnpm pack
