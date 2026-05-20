@@ -1,3 +1,5 @@
+// Template placeholder — replace with tests for your library implementation.
+
 import { expect, it } from "vitest";
 import { fibonacciSequence } from "./lib.js";
 

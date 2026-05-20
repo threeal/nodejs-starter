@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Template placeholder — replace with your CLI implementation.
 
 import { program } from "commander";
 import { fibonacciSequence } from "./lib.js";

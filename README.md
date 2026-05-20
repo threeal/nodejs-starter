@@ -1,36 +1,87 @@
 # Node.js Starter
 
-A minimal [Node.js](https://nodejs.org/en) project template written in [TypeScript](https://www.typescriptlang.org/), with formatting, linting, testing, and CI/CD ready to go.
+A minimal template for starting a new [Node.js](https://nodejs.org/en) project.
 
-## What's Included
+## Features
 
-- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [Commander.js](https://github.com/tj/commander.js)
-- **[pnpm](https://pnpm.io/)** as the package manager
-- **Formatting** with [Prettier](https://prettier.io/) and **linting** with [ESLint](https://eslint.org/)
-- **Testing** with [Vitest](https://vitest.dev/) — 100% code coverage required
-- **Pre-commit hooks** with [Lefthook](https://lefthook.dev/) — auto-formats and lints before each commit
-- **Dependabot** — keeps GitHub Actions and npm dependencies up to date automatically
-- **CI workflow** — validates the pre-commit hook on every pull request and push to `main`
+- [TypeScript](https://www.typescriptlang.org/) library and CLI with [ESM](https://nodejs.org/api/esm.html) support
+- [pnpm](https://pnpm.io/) as the package manager
+- [Vitest](https://vitest.dev/) for testing with 100% code coverage enforcement
+- [Prettier](https://prettier.io/) for code formatting
+- [ESLint](https://eslint.org/) for linting
+- [Lefthook](https://lefthook.dev/) for pre-commit hooks
+- [GitHub Actions](https://github.com/features/actions) for CI workflows
+- [Dependabot](https://docs.github.com/en/code-security/dependabot) for automated dependency updates
 
 ## Getting Started
 
-1. [Create a new repository](https://github.com/new?template_name=nodejs-starter&template_owner=threeal) from this template, or clone it directly.
-2. Install [pnpm](https://pnpm.io/installation) and run `pnpm install` to set up project dependencies.
-3. Install [Lefthook](https://lefthook.dev/installation/) and run `lefthook install` to activate the pre-commit hook.
-4. Replace the [`LICENSE`](./LICENSE) file with your preferred license, or keep it to keep the project [unlicensed](https://unlicense.org/).
-5. Modify the template files to fit your project.
+### 1. Create a Project
 
-## Customizing
+[Create a new repository from this template](https://github.com/new?template_name=nodejs-starter&template_owner=threeal) on GitHub, or clone it locally:
 
-Each file is a starting point — modify it to fit your needs:
+```sh
+git clone https://github.com/threeal/nodejs-starter.git my-project
+cd my-project
+```
 
-- `src/lib.ts` — replace the placeholder library with your own implementation
-- `src/bin.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
-- `package.json` — update project name, description, version, and other metadata
-- `.prettierrc.json` — adjust formatting options
-- `eslint.config.ts` — adjust linting rules
-- `vitest.config.ts` — adjust test configuration and coverage thresholds
-- `lefthook.yaml` — add more pre-commit checks or other Git hooks
-- `.github/workflows/ci.yaml` — extend or replace the CI workflow
-- `.github/dependabot.yaml` — adjust update frequency or add more package ecosystems
-- `CLAUDE.md` — replace with guidance for your project's structure, tools, and development workflow (for Claude Code)
+### 2. Update Project Information
+
+Replace the placeholder content in these files with your project's actual information:
+
+- **[`LICENSE`](./LICENSE)** — Replace with your project's license, or remove it to keep the project unlicensed.
+- **[`package.json`](./package.json)** — Update the project name, version, description, author, and other metadata.
+- **[`README.md`](./README.md)** — Replace this file with a description of your project.
+
+### 3. Install Tools
+
+Install [pnpm](https://pnpm.io/installation) if not already available, then install project dependencies:
+
+```sh
+pnpm install
+```
+
+To enable pre-commit hooks, install [Lefthook](https://lefthook.dev/installation/) independently, then set up the hooks:
+
+```sh
+lefthook install
+```
+
+### 4. Develop
+
+The library entry point is [`src/lib.ts`](./src/lib.ts) and the CLI entry point is [`src/bin.ts`](./src/bin.ts). Replace the placeholder code in both files with your actual implementation.
+
+Run the CLI directly without compiling:
+
+```sh
+pnpm start
+```
+
+To type-check, format, or lint manually:
+
+```sh
+pnpm tsc               # Type-check
+pnpm prettier --write . # Fix formatting
+pnpm eslint --fix      # Fix linting issues
+```
+
+> If your project doesn't need a CLI, remove `src/bin.ts` and the `bin` field from `package.json`.
+
+### 5. Test
+
+Test files are named `*.test.ts` and live alongside their source files. Run all tests with:
+
+```sh
+pnpm test
+```
+
+Tests must pass with 100% code coverage.
+
+### 6. Release
+
+Compile TypeScript and package the library:
+
+```sh
+pnpm pack
+```
+
+This produces a `.tgz` tarball to include in your GitHub release. Ensure `package.json` has the correct version before running this.

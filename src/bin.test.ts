@@ -1,3 +1,5 @@
+// Template placeholder — replace with tests for your CLI implementation.
+
 import { expect, it, vi } from "vitest";
 
 it("should print a fibonacci sequence", async () => {
