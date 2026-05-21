@@ -1,3 +1,5 @@
+// Template placeholder — replace with your library implementation.
+
 /**
  * Generate a Fibonacci sequence up to the given number of terms.
  *

@@ -46,5 +46,5 @@ The development workflow uses **jiti** to run `src/bin.ts` directly without a co
 
 - **ESLint** uses flat config (`eslint.config.ts`) with `typescript-eslint` strict + stylistic type-checked rules.
 - **Prettier** uses `prettier-plugin-organize-imports` — import order is auto-managed.
-- **Lefthook** is an external tool (not a dev dependency) that manages Git hooks. It must be installed independently and set up with `lefthook install`. Pre-commit hooks run type-check → format → lint with `fail_on_changes: always`, so hooks can auto-fix files but will abort the commit if any file changed, requiring a re-stage. The CI also validates the pre-commit hook by running `lefthook run pre-commit --all-files`.
+- **Lefthook** is an external tool (not a project dependency) that manages Git hooks. To enable pre-commit hooks, install it independently and run `lefthook install`. Pre-commit hooks run type-check → format → lint with `fail_on_changes: always`, so hooks can auto-fix files but will abort the commit if any file changed, requiring a re-stage. The CI also validates the pre-commit hook by running `lefthook run pre-commit --all-files`.
 - **Vitest** requires 100% code coverage (lines, functions, branches, statements) enforced via the `coverage` threshold in `vitest.config.ts`.
