@@ -1,6 +1,6 @@
-import { expect, it, vi } from "vitest";
+import { expect, test, vi } from "vitest";
 
-it("should print a fibonacci sequence", async () => {
+test("prints the fibonacci sequence to stdout", async () => {
   const spy = vi.spyOn(process.stdout, "write").mockReturnValue(true);
 
   process.argv = ["node", "bin.js", "5"];
