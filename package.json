@@ -14,9 +14,13 @@
   "repository": "github:threeal/nodejs-starter",
   "license": "Unlicense",
   "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
+  "exports": {
+    ".": {
+      "types": "dist/lib.d.ts",
+      "import": "dist/lib.js"
+    }
+  },
   "type": "module",
-  "main": "dist/lib.js",
-  "types": "dist/lib.d.ts",
   "bin": "dist/bin.js",
   "files": [
     "dist"
