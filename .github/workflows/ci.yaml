@@ -26,7 +26,7 @@ jobs:
         run: lefthook run pre-commit --all-files
 
       - name: Test
-        run: pnpm test
+        run: pnpm vitest run
 
       - name: Package
         run: pnpm pack
