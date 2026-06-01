@@ -11,18 +11,16 @@ This is a minimal Node.js library and CLI starter template. The Fibonacci sequen
 ## Commands
 
 ```sh
-pnpm test              # Run all tests
-pnpm vitest run <file> # Run a single test file (e.g. src/lib.test.ts)
-pnpm vitest            # Run tests in watch mode
+vitest run             # Run all tests
+vitest run <file>      # Run a single test file (e.g. src/lib.test.ts)
 
 pnpm tsc               # Type-check without emitting
-pnpm eslint            # Lint
-pnpm eslint --fix      # Lint and auto-fix
-pnpm prettier --check . # Check formatting
-pnpm prettier --write . # Fix formatting
+eslint                 # Lint
+eslint --fix           # Lint and auto-fix
+prettier --check .     # Check formatting
+prettier --write .     # Fix formatting
 
 pnpm prepack           # Compile TypeScript to dist/ (tsc -p tsconfig.build.json)
-pnpm start             # Run CLI directly via jiti (no compile step needed)
 ```
 
 ## Architecture
@@ -40,7 +38,7 @@ TypeScript compiles via `tsconfig.build.json` into `dist/`:
 - `dist/lib.js` + `dist/lib.d.ts` — library entry (exported as `"."`)
 - `dist/bin.js` — CLI binary (exported as `"./bin"` and registered as the `nodejs-starter` bin)
 
-The development workflow uses **jiti** to run `src/bin.ts` directly without a compile step (`pnpm start`).
+The development workflow uses **jiti** to run TypeScript source files directly without a compile step.
 
 ### Tooling details
 

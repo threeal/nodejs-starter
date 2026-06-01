@@ -26,9 +26,7 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "tsc -p tsconfig.build.json",
-    "start": "jiti src/bin.ts",
-    "test": "vitest run"
+    "prepack": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
     "commander": "^15.0.0"
