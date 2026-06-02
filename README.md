@@ -24,8 +24,9 @@ A minimal [Node.js](https://nodejs.org/en) project template written in [TypeScri
 
 Each file is a starting point — modify it to fit your needs:
 
-- `src/lib.ts` — replace the placeholder library with your own implementation
-- `src/bin.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
+- `src/fibonacci.ts` — replace the placeholder library with your own implementation
+- `src/index.ts` — update the public API exports to match your library
+- `src/cli.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
 - `package.json` — update project name, description, version, and other metadata
 - `.prettierrc.json` — adjust formatting options
 - `eslint.config.ts` — adjust linting rules
