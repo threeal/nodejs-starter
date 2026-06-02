@@ -21,7 +21,7 @@
     }
   },
   "type": "module",
-  "bin": "dist/cli.js",
+  "bin": "dist/cli/index.js",
   "files": [
     "dist"
   ],
@@ -29,7 +29,7 @@
     "prepack": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
-    "commander": "^15.0.0"
+    "clipanion": "4.0.0-rc.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
