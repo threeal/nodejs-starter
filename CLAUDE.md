@@ -36,7 +36,7 @@ This is a minimal Node.js library + CLI starter template written in TypeScript t
 TypeScript compiles via `tsconfig.build.json` into `dist/`:
 
 - `dist/lib.js` + `dist/lib.d.ts` — library entry (exported as `"."`)
-- `dist/bin.js` — CLI binary (exported as `"./bin"` and registered as the `nodejs-starter` bin)
+- `dist/bin.js` — CLI binary (exported as `"./bin"` and registered as the `fibonacci-sample` bin)
 
 The development workflow uses **jiti** to run TypeScript source files directly without a compile step.
 
