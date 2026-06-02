@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from "commander";
-import { fibonacciSequence } from "./lib.js";
+import { fibonacciSequence } from "./fibonacci.js";
 
 program
   .name("my_fibonacci")

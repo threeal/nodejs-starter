@@ -27,16 +27,17 @@ pnpm prepack           # Compile TypeScript to dist/ (tsc -p tsconfig.build.json
 
 This is a minimal Node.js library + CLI starter template written in TypeScript targeting Node 24 (ESM).
 
-- **`src/lib.ts`** — The library's public API (currently a Fibonacci sequence generator as a placeholder example).
-- **`src/bin.ts`** — CLI entry point built with Commander.js that wraps the library.
+- **`src/fibonacci.ts`** — The library implementation (currently a Fibonacci sequence generator as a placeholder example).
+- **`src/index.ts`** — The library's public API (re-exports from implementation modules).
+- **`src/cli.ts`** — CLI entry point built with Commander.js that wraps the library.
 - **`src/*.test.ts`** — Vitest test files co-located with source.
 
 ### Build outputs
 
 TypeScript compiles via `tsconfig.build.json` into `dist/`:
 
-- `dist/lib.js` + `dist/lib.d.ts` — library entry (exported as `"."`)
-- `dist/bin.js` — CLI binary (exported as `"./bin"` and registered as the `fibonacci-sample` bin)
+- `dist/index.js` + `dist/index.d.ts` — library entry (exported as `"."`)
+- `dist/cli.js` — CLI binary (registered as the `fibonacci-sample` bin)
 
 The development workflow uses **jiti** to run TypeScript source files directly without a compile step.
 

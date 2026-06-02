@@ -16,12 +16,12 @@
   "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
   "exports": {
     ".": {
-      "types": "dist/lib.d.ts",
-      "import": "dist/lib.js"
+      "types": "dist/index.d.ts",
+      "import": "dist/index.js"
     }
   },
   "type": "module",
-  "bin": "dist/bin.js",
+  "bin": "dist/cli.js",
   "files": [
     "dist"
   ],
