@@ -1,38 +1,76 @@
 # Node.js Starter
 
-A minimal [Node.js](https://nodejs.org/en) project template written in [TypeScript](https://www.typescriptlang.org/), with formatting, linting, testing, and CI/CD ready to go.
-
-## What's Included
-
-- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [yargs](https://yargs.js.org/)
-- **[pnpm](https://pnpm.io/)** as the package manager
-- **Formatting** with [Prettier](https://prettier.io/) and **linting** with [ESLint](https://eslint.org/)
-- **Testing** with [Vitest](https://vitest.dev/) — 100% code coverage required
-- **Pre-commit hooks** with [Lefthook](https://lefthook.dev/) — auto-formats and lints before each commit
-- **Dependabot** — keeps GitHub Actions and npm dependencies up to date automatically
-- **CI workflow** — validates the pre-commit hook on every pull request and push to `main`
+A minimal template for building a [Node.js](https://nodejs.org/en) library in [TypeScript](https://www.typescriptlang.org/) with [ESM](https://nodejs.org/api/esm.html) support and an optional CLI. Ships pre-configured with formatting, linting, 100% test coverage enforcement, pre-commit hooks, and CI.
 
 ## Getting Started
 
-1. [Create a new repository](https://github.com/new?template_name=nodejs-starter&template_owner=threeal) from this template, or clone it directly.
-2. Install [pnpm](https://pnpm.io/installation) and run `pnpm install` to set up project dependencies.
-3. Install [Lefthook](https://lefthook.dev/installation/) and run `lefthook install` to activate the pre-commit hook.
-4. Replace the [`LICENSE`](./LICENSE) file with your preferred license, or keep it to keep the project [unlicensed](https://unlicense.org/).
-5. Modify the template files to fit your project.
+Create a new repository from this template on GitHub using [this link](https://github.com/new?template_name=nodejs-starter&template_owner=threeal), or clone it locally and point it at your own remote.
+
+## Setup
+
+Install [pnpm](https://pnpm.io/), then install dependencies:
+
+```sh
+pnpm install
+```
+
+Install [Lefthook](https://lefthook.dev/), then register the pre-commit hook:
+
+```sh
+lefthook install
+```
 
 ## Customizing
 
-Each file is a starting point — modify it to fit your needs:
+Replace the placeholder content in `src/` with your actual library implementation.
 
-- `src/fibonacci.ts` — replace the placeholder library with your own implementation
-- `src/index.ts` — update the public API exports to match your library
-- `src/cli/index.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
-- `src/cli/commands/` — add or replace yargs command modules; each command is a `createXxxCommand()` factory for testability
-- `package.json` — update project name, description, version, and other metadata
-- `.prettierrc.json` — adjust formatting options
-- `eslint.config.ts` — adjust linting rules
-- `vitest.config.ts` — adjust test configuration and coverage thresholds
-- `lefthook.yaml` — add more pre-commit checks or other Git hooks
-- `.github/workflows/ci.yaml` — extend or replace the CI workflow
-- `.github/dependabot.yaml` — adjust update frequency or add more package ecosystems
-- `CLAUDE.md` — replace with guidance for your project's structure, tools, and development workflow (for Claude Code)
+**`src/fibonacci.ts`** — Replace with your own library logic.
+
+**`src/index.ts`** — Update the public API exports to match your library.
+
+**`src/cli/`** — Replace or remove the placeholder CLI commands. Remove this folder and the `bin` entry in `package.json` if your project doesn't need a CLI.
+
+**`package.json`** — Update the project name, description, version, and other metadata.
+
+**`README.md`** and **`CLAUDE.md`** — Replace with documentation suited to your project.
+
+**`LICENSE`** — Replace with your preferred license, or keep it as-is (the template uses the [Unlicense](https://unlicense.org/) — public domain).
+
+## Development
+
+Write code in `src/`. Test files live alongside source as `*.test.ts`. Before committing, run the pre-commit hook to install dependencies, type-check, and fix formatting and lint:
+
+```sh
+lefthook run pre-commit
+```
+
+If any files change during the run, re-stage them and retry. The hook also runs automatically on each `git commit` — if it fails, fix the reported issues, re-stage, and commit again.
+
+## Testing
+
+Run the full test suite with:
+
+```sh
+pnpm vitest run
+```
+
+The project enforces 100% code coverage on every run.
+
+## CI
+
+`.github/workflows/ci.yaml` runs the pre-commit hook, the full test suite, and `pnpm pack` on every push and pull request.
+
+## Releasing
+
+Update the version in `package.json`, push a version tag, and create a GitHub Release. To publish to the npm registry, run:
+
+```sh
+pnpm publish
+```
+
+## Framework-Specific Templates
+
+For a more opinionated starting point in a specific framework:
+
+- [Action Starter](https://github.com/threeal/action-starter) — JavaScript GitHub Actions
+- [Discord Bot Starter](https://github.com/threeal/discord-bot-starter) — Discord bots with the Sapphire framework
