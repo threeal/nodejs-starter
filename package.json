@@ -21,7 +21,7 @@
     }
   },
   "type": "module",
-  "bin": "dist/cli.js",
+  "bin": "dist/cli/index.js",
   "files": [
     "dist"
   ],
@@ -29,12 +29,13 @@
     "prepack": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
-    "commander": "^15.0.0"
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@tsconfig/node24": "^24.0.4",
     "@types/node": "^25.9.1",
+    "@types/yargs": "^17.0.35",
     "@vitest/coverage-v8": "^4.1.6",
     "eslint": "^10.4.0",
     "jiti": "^2.7.0",

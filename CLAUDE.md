@@ -14,7 +14,8 @@ This is a minimal Node.js library and CLI starter template written in TypeScript
 
 - **`src/fibonacci.ts`** — The library implementation (currently a Fibonacci sequence generator as a placeholder example).
 - **`src/index.ts`** — The library's public API (re-exports from implementation modules).
-- **`src/cli.ts`** — CLI entry point built with Commander.js that wraps the library.
+- **`src/cli/index.ts`** — CLI entry point built with yargs that wires commands and parses `process.argv`.
+- **`src/cli/commands/`** — Individual yargs command modules; each exports a `createXxxCommand()` factory that accepts injected streams/deps for testability.
 - **`src/*.test.ts`** — Vitest test files co-located with source.
 
 ### TypeScript Configuration
@@ -27,7 +28,7 @@ Both configs extend `@tsconfig/node24`, which sets `module: nodenext` and `modul
 ### Build Outputs
 
 - `dist/index.js` + `dist/index.d.ts` — library entry (exported as `"."`).
-- `dist/cli.js` — CLI binary (registered as the `fibonacci-sample` bin via shorthand `"bin": "dist/cli.js"` in `package.json`, which derives the name from the package name).
+- `dist/cli/index.js` — CLI binary (registered as the `fibonacci-sample` bin via shorthand `"bin": "dist/cli/index.js"` in `package.json`, which derives the name from the package name).
 
 ## Tooling
 

@@ -4,7 +4,7 @@ A minimal [Node.js](https://nodejs.org/en) project template written in [TypeScri
 
 ## What's Included
 
-- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [Commander.js](https://github.com/tj/commander.js)
+- **TypeScript** library with [ESM](https://nodejs.org/api/esm.html) support and a CLI entry point using [yargs](https://yargs.js.org/)
 - **[pnpm](https://pnpm.io/)** as the package manager
 - **Formatting** with [Prettier](https://prettier.io/) and **linting** with [ESLint](https://eslint.org/)
 - **Testing** with [Vitest](https://vitest.dev/) — 100% code coverage required
@@ -26,7 +26,8 @@ Each file is a starting point — modify it to fit your needs:
 
 - `src/fibonacci.ts` — replace the placeholder library with your own implementation
 - `src/index.ts` — update the public API exports to match your library
-- `src/cli.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
+- `src/cli/index.ts` — replace the placeholder CLI, or remove it along with the `bin` entry in `package.json` if not needed
+- `src/cli/commands/` — add or replace yargs command modules; each command is a `createXxxCommand()` factory for testability
 - `package.json` — update project name, description, version, and other metadata
 - `.prettierrc.json` — adjust formatting options
 - `eslint.config.ts` — adjust linting rules
