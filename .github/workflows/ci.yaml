@@ -12,10 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.3
 
-      - name: Install Lefthook
-        run: |
-          curl -1sLf 'https://dl.cloudsmith.io/public/evilmartians/lefthook/setup.deb.sh' | sudo -E bash
-          sudo apt install lefthook
+      - name: Setup Lefthook
+        uses: threeal/setup-lefthook-action@v1.0.0
 
       - name: Setup pnpm
         uses: threeal/setup-pnpm-action@v1.0.0
