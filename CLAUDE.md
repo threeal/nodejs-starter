@@ -32,7 +32,7 @@ Both configs extend `@tsconfig/node24`, which sets `module: nodenext` and `modul
 
 ## Tooling
 
-- **pnpm** is the package manager. It uses `use-node-version` in `.npmrc` to select the Node.js version; `packageManager` in `package.json` pins the pnpm version; `engines.node` asserts Node >=24.
+- **pnpm** is the package manager. `devEngines.runtime` in `package.json` specifies the Node.js version (`onFail: "download"` triggers automatic download if needed); `packageManager` pins the pnpm version; `engines.node` asserts Node >=24.
 - **ESLint** uses flat config (`eslint.config.ts`) with `@eslint/js` recommended rules and `typescript-eslint` strict + stylistic type-checked rules.
 - **Prettier** uses `prettier-plugin-organize-imports` — import order is auto-managed.
 - **Lefthook** manages Git hooks via `lefthook.yaml`. It is a standalone binary, not a pnpm package.

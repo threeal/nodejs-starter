@@ -49,5 +49,12 @@
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@10.34.1"
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.16.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.5.2"
 }
