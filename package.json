@@ -34,7 +34,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^26.1.0",
+    "@types/node": "^26.1.1",
     "@types/yargs": "^17.0.35",
     "@vitest/coverage-v8": "^4.1.9",
     "eslint": "^10.6.0",
