@@ -37,7 +37,7 @@
     "@types/node": "^26.1.1",
     "@types/yargs": "^17.0.35",
     "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.6.0",
+    "eslint": "^10.7.0",
     "jiti": "^2.7.0",
     "prettier": "^3.9.4",
     "prettier-plugin-organize-imports": "^4.3.0",
