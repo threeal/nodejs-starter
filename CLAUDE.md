@@ -6,81 +6,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-This is a minimal Node.js library and CLI starter template written in TypeScript targeting Node 24 (ESM). The Fibonacci sequence code in `src/` is a placeholder — replace it with your actual library and CLI logic when starting a new project.
+Minimal Node.js library + CLI starter, TypeScript targeting Node 24, ESM. `src/` contains a placeholder Fibonacci implementation — replace it with real logic when starting a new project.
 
-## Architecture
+## Rules that aren't obvious from the code
 
-### Source Files
+- There are two tsconfig files with different jobs — don't assume one:
+  - `tsconfig.json` — type checking (`pnpm tsc`)
+  - `tsconfig.build.json` — compilation for packaging, run automatically by `prepack`
+- Import paths must end in `.js`, even when importing `.ts` source files. Both tsconfig files set `moduleResolution: node16`, which requires this.
+- Prettier auto-reorders imports (`prettier-plugin-organize-imports`) — reordering on format is expected, not a bug.
+- `lefthook run pre-commit` auto-fixes formatting and lint issues, and `fail_on_changes` fails the run if any file changed. If that happens, re-stage the changed files and rerun.
+- Vitest's 100% coverage threshold applies to the whole run, not per file. Running a single test file can fail coverage if it imports source another file is responsible for covering — use the full suite for an accurate result.
 
-- **`src/cli/commands/`** — Individual yargs command modules; each exports a `createXxxCommand()` factory that accepts injected streams/deps for testability.
-- **`src/cli/index.ts`** — CLI entry point built with yargs that wires commands and parses `process.argv`.
-- **`src/fibonacci.ts`** — The library implementation (currently a Fibonacci sequence generator as a placeholder example).
-- **`src/index.ts`** — The library's public API (re-exports from implementation modules).
-- **`src/*.test.ts`** — Vitest test files co-located with source.
+## Layout
 
-### Build Outputs
+- `src/cli/commands/` — one file per yargs command, each exporting a `createXxxCommand()` factory that takes injected streams/deps for testability. Follow this shape for new commands.
+- `src/cli/index.ts` — CLI entry point, wires commands into yargs.
+- `src/index.ts` — library's public API (re-exports).
+- `src/*.test.ts` — colocated with the source they test.
 
-- **`dist/cli/index.js`** — CLI binary.
-- **`dist/index.js`** + **`dist/index.d.ts`** — Library entry (exported as `"."`).
+## Config map
 
-## Tooling
+- Type checking — `tsconfig.json`
+- Build for packaging — `tsconfig.build.json`
+- Lint — `eslint.config.ts`
+- Format — `.prettierrc.json`
+- Tests + coverage — `vitest.config.ts`
+- Git hooks — `lefthook.yaml`
+- CI — `.github/workflows/ci.yaml`
+- Dependency updates — `.github/dependabot.yaml`
 
-### Dependabot
+## Commands
 
-Keeps GitHub Actions and npm dependencies up to date automatically via `.github/dependabot.yaml`.
-
-### ESLint
-
-Linter configured in `eslint.config.ts`.
-
-### GitHub Actions
-
-Automates CI. Workflow files:
-
-- **`.github/workflows/ci.yaml`** — Triggers on push to `main`, pull requests, and manual dispatch.
-
-### Lefthook
-
-Git hook manager configured in `lefthook.yaml`.
-
-### pnpm
-
-Package manager. Also manages the Node.js runtime — versions for Node.js and pnpm are pinned in `package.json`.
-
-### Prettier
-
-Formatter configured in `.prettierrc.json` using `prettier-plugin-organize-imports` — import order is auto-managed.
-
-### TypeScript
-
-Type checker and compiler. `tsconfig.json` is used for type checking via `pnpm tsc`; `tsconfig.build.json` is used for compilation via `pnpm pack`.
-
-Both configs set `moduleResolution: node16`, which requires all import paths to use `.js` extensions — even when importing `.ts` source files.
-
-### Vitest
-
-Test runner configured in `vitest.config.ts` with 100% coverage threshold required on every test run.
-
-## Checking and Fixing
-
-Run the pre-commit hook:
-
-```sh
-lefthook run pre-commit              # staged files only (default)
-lefthook run pre-commit --all-files  # all files — matches what CI runs
-```
-
-If any file changes during the run, re-stage the changed files and retry.
-
-## Testing
-
-```sh
-pnpm vitest run             # Run all tests
-pnpm vitest run <file>      # Run a single test file
-```
-
-Coverage is always enabled and computed for all files imported during the test run. Running a single test file may fail the 100% threshold if it imports a source file that another test is responsible for fully covering — use the full suite for accurate results.
-
-## Building and Packaging
-
-Use `pnpm pack` to build and package the library into a tarball (e.g. for publishing to npm). The `prepack` script runs `tsc -p tsconfig.build.json` automatically before packing.
+- `lefthook run pre-commit` — lint/format/etc. on staged files (`--all-files` to match CI)
+- `pnpm vitest run` — full test suite with coverage
+- `pnpm pack` — build and package into a tarball (runs `prepack` → `tsc -p tsconfig.build.json`)
