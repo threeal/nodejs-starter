@@ -38,6 +38,6 @@ Minimal Node.js library + CLI starter, TypeScript targeting Node 24, ESM. `src/`
 
 ## Commands
 
-- `lefthook run pre-commit` — lint/format/etc. on staged files (`--all-files` to match CI)
+- `lefthook run pre-commit` — lint/format/etc. on staged files
 - `pnpm vitest run` — full test suite with coverage
 - `pnpm pack` — build and package into a tarball (runs `prepack` → `tsc -p tsconfig.build.json`)
