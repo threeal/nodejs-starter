@@ -14,7 +14,8 @@ Minimal Node.js library + CLI starter, TypeScript targeting Node 24, ESM. `src/`
   - `tsconfig.json` — type checking (`pnpm tsc`)
   - `tsconfig.build.json` — compilation for packaging, run automatically by `prepack`
 - Import paths must end in `.js`, even when importing `.ts` source files. Both tsconfig files set `moduleResolution: node16`, which requires this.
-- `lefthook run pre-commit` auto-fixes formatting and lint issues, and `fail_on_changes` fails the run if any file changed. If that happens, re-stage the changed files and rerun.
+- `lefthook run pre-commit` skips every job when nothing is staged, even ones that ignore the staged file list — pass `--all-files` to run it outside an actual commit.
+- The pre-commit hook fixes files in place, and the run fails if any file changes. Report that failure and leave the fixes for the user to review and re-stage before committing again.
 - Vitest's 100% coverage threshold applies to the whole run, not per file. Running a single test file can fail coverage if it imports source another file is responsible for covering — use the full suite for an accurate result.
 - Prettier auto-reorders imports (`prettier-plugin-organize-imports`) — reordering on format is expected, not a bug.
 
@@ -38,6 +39,6 @@ Minimal Node.js library + CLI starter, TypeScript targeting Node 24, ESM. `src/`
 
 ## Commands
 
-- `lefthook run pre-commit` — lint/format/etc. on staged files
+- `lefthook run pre-commit --all-files` — run the pre-commit checks across the repo
 - `pnpm vitest run` — full test suite with coverage
 - `pnpm pack` — build and package into a tarball (runs `prepack` → `tsc -p tsconfig.build.json`)

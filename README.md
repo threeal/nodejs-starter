@@ -45,7 +45,7 @@ The project enforces 100% code coverage on every run.
 Before committing, run the pre-commit hook to install dependencies, type-check, and fix formatting and lint:
 
 ```sh
-lefthook run pre-commit
+lefthook run pre-commit --all-files
 ```
 
 If any file changes during the run, re-stage the changed files and retry. The hook also runs automatically on each `git commit` — if it fails, fix the reported issues, re-stage, and commit again.
