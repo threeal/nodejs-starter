@@ -19,7 +19,7 @@ jobs:
         uses: threeal/setup-pnpm-action@v2.0.0
 
       - name: Check pre-commit hook
-        run: lefthook run pre-commit
+        run: lefthook run pre-commit --all-files
 
       - name: Test
         run: pnpm vitest run
