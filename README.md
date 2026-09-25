@@ -24,7 +24,7 @@ lefthook install
 
 Replace or extend the template files to fit your project:
 
-- **`src/cli/`** — Replace or remove the placeholder CLI commands. Remove this folder and the `bin` entry in `package.json` if your project doesn't need a CLI.
+- **`src/cli.ts`** — Replace or remove the placeholder CLI. Remove this file and the `bin` entry in `package.json` if your project doesn't need a CLI.
 - **`src/fibonacci.ts`** — Replace with your own library logic.
 - **`src/index.ts`** — Update the public API exports to match your library.
 - **`CLAUDE.md`** — Replace with guidance specific to your project.
