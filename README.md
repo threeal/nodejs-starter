@@ -66,3 +66,4 @@ For a more opinionated starting point in a specific framework:
 
 - **[Action Starter](https://github.com/threeal/action-starter)** — JavaScript GitHub Action projects.
 - **[Discord Bot Starter](https://github.com/threeal/discord-bot-starter)** — Discord bot projects.
+- **[React Starter](https://github.com/threeal/react-starter)** — React app projects.
