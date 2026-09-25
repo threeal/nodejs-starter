@@ -6,7 +6,7 @@ import { fibonacciSequence } from "./fibonacci.js";
 
 await yargs(hideBin(process.argv))
   .scriptName("fibonacci-sample")
-  .version("0.0.0")
+  .version("0.1.0")
   .command(
     "$0 <n>",
     "Generate a Fibonacci sequence up to the given number of terms.",
