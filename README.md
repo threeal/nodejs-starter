@@ -24,12 +24,12 @@ lefthook install
 
 Replace or extend the template files to fit your project:
 
-- **`src/cli.ts`** — Replace or remove the placeholder CLI. Remove this file and the `bin` entry in `package.json` if your project doesn't need a CLI.
+- **`src/cli.ts`** — Replace or remove the placeholder CLI. Remove this file, the `bin` entry in `package.json`, and the `yargs` and `@types/yargs` dependencies if your project doesn't need a CLI.
 - **`src/fibonacci.ts`** — Replace with your own library logic.
 - **`src/index.ts`** — Update the public API exports to match your library.
 - **`CLAUDE.md`** — Replace with guidance specific to your project.
 - **`LICENSE`** — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
-- **`package.json`** — Update the project name, description, version, and other metadata.
+- **`package.json`** — Update the package name, description, version, author, and other metadata.
 - **`README.md`** — Replace with a description of your project.
 
 ## Development
@@ -42,19 +42,13 @@ pnpm vitest run
 
 The project enforces 100% code coverage on every run.
 
-Before committing, run the pre-commit hook to install dependencies, type-check, and fix formatting and lint:
+Each `git commit` runs the pre-commit hook registered during setup, which checks your changes and fixes what it can in place. If it fails, fix any reported issues, re-stage the changed files, and commit again.
 
-```sh
-lefthook run pre-commit --all-files
-```
-
-If any file changes during the run, re-stage the changed files and retry. The hook also runs automatically on each `git commit` — if it fails, fix the reported issues, re-stage, and commit again.
-
-After committing, push to `main` or open a pull request from another branch — CI will run the pre-commit hook across all files, the full test suite, and `pnpm pack`.
+After committing, push to `main` or open a pull request from another branch — CI will run the same checks across all files, plus additional checks of its own.
 
 ## Releasing
 
-Update the version in `package.json`, push a version tag, and create a GitHub Release. To publish to the npm registry, run:
+Update the version in `package.json`, push a version tag, and create a GitHub Release. To publish to the [npm registry](https://www.npmjs.com/), run:
 
 ```sh
 pnpm publish
