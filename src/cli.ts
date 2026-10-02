@@ -9,7 +9,7 @@ await yargs(hideBin(process.argv))
   .version("0.1.0")
   .command(
     "$0 <n>",
-    "Generate a Fibonacci sequence up to the given number of terms.",
+    "Generate a Fibonacci sequence up to the given number of terms",
     (y) =>
       y.positional("n", {
         type: "number",
