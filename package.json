@@ -1,19 +1,19 @@
 {
-  "name": "fibonacci-sample",
+  "name": "bonacci",
   "version": "0.1.0",
-  "description": "Sample library and CLI for generating Fibonacci sequences",
+  "description": "An example library and CLI for generating a Fibonacci sequence",
   "keywords": [
     "fibonacci",
     "math"
   ],
-  "homepage": "https://github.com/threeal/nodejs-starter#readme",
+  "homepage": "https://github.com/leonardo/bonacci#readme",
   "bugs": {
-    "url": "https://github.com/threeal/nodejs-starter/issues",
-    "email": "alfi.maulana.f@gmail.com"
+    "url": "https://github.com/leonardo/bonacci/issues",
+    "email": "leonardo@bonacci.com"
   },
-  "repository": "github:threeal/nodejs-starter",
+  "repository": "github:leonardo/bonacci",
   "license": "Unlicense",
-  "author": "Alfi Maulana <alfi.maulana.f@gmail.com>",
+  "author": "Leonardo Bonacci <leonardo@bonacci.com>",
   "exports": {
     ".": {
       "types": "dist/index.d.ts",
