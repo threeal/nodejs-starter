@@ -1,8 +1,11 @@
-import { expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 import { fibonacciSequence } from "./fibonacci.js";
 
-test("returns a fibonacci sequence of the given length", () => {
-  expect(fibonacciSequence(1)).toStrictEqual([1]);
-  expect(fibonacciSequence(2)).toStrictEqual([1, 1]);
-  expect(fibonacciSequence(5)).toStrictEqual([1, 1, 2, 3, 5]);
+describe("fibonacciSequence", () => {
+  test("generates a Fibonacci sequence", () => {
+    expect(fibonacciSequence(0)).toStrictEqual([]);
+    expect(fibonacciSequence(1)).toStrictEqual([1]);
+    expect(fibonacciSequence(2)).toStrictEqual([1, 1]);
+    expect(fibonacciSequence(5)).toStrictEqual([1, 1, 2, 3, 5]);
+  });
 });
