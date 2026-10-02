@@ -5,7 +5,7 @@ import { hideBin } from "yargs/helpers";
 import { fibonacciSequence } from "./fibonacci.js";
 
 await yargs(hideBin(process.argv))
-  .scriptName("fibonacci-sample")
+  .scriptName("bonacci")
   .version("0.1.0")
   .command(
     "$0 <n>",
