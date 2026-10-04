@@ -9,8 +9,8 @@ pre-commit:
     - name: check types
       run: pnpm tsc
 
-    - name: fix formatting
-      run: pnpm prettier --write .
-
     - name: fix lint
       run: pnpm eslint --fix
+
+    - name: fix formatting
+      run: pnpm prettier --write .
