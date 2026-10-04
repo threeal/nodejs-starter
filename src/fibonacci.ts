@@ -3,7 +3,6 @@
  *
  * The sequence starts from `1, 1`, and exactly `n` terms are returned, so an
  * `n` of 0 yields an empty sequence.
- *
  * @param n - The number of terms.
  * @returns A Fibonacci sequence.
  */
