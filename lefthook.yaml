@@ -10,7 +10,7 @@ pre-commit:
       run: pnpm tsc
 
     - name: fix lint
-      run: pnpm eslint --fix
+      run: pnpm eslint --fix --max-warnings 0
 
     - name: fix formatting
       run: pnpm prettier --write .
