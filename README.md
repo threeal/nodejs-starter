@@ -48,7 +48,7 @@ After committing, push to `main` or open a pull request from another branch — 
 
 ## Releasing
 
-Update the version in `package.json`, push a version tag, and create a GitHub Release. To publish to the [npm registry](https://www.npmjs.com/), run:
+Update the version in `package.json` and in the CLI's `--version` in `src/cli.ts`, push a version tag, and create a GitHub Release. To publish to the [npm registry](https://www.npmjs.com/), run:
 
 ```sh
 pnpm publish
