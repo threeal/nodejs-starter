@@ -31,8 +31,8 @@ importers:
         specifier: ^10.13.0
         version: 10.13.0(jiti@2.7.0)
       eslint-plugin-jsdoc:
-        specifier: ^65.4.1
-        version: 65.4.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
+        specifier: ^65.4.2
+        version: 65.4.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3)
       jiti:
         specifier: ^2.7.0
         version: 2.7.0
@@ -506,8 +506,8 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  eslint-plugin-jsdoc@65.4.1:
-    resolution: {integrity: sha512-gMcDG5+s6BV/urDowAKXgKSTYZPK/tQuNP6ttjavwHQ/YYYRyp3cj/unAu2O+cdgDC8YJwKbt+Ok1mq4n4R71g==}
+  eslint-plugin-jsdoc@65.4.2:
+    resolution: {integrity: sha512-+1XHeMXZxHK0+uiHwKuZzwCIlZjw9SuZ/enuLMtZ8ZT7cxBLTZ4lCHd3kO6BhPcsUQ59fMg6DKWcCNxnRAhMjg==}
     engines: {node: ^22.22.2 || >=24.15.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
@@ -1585,7 +1585,7 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-plugin-jsdoc@65.4.1(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3):
+  eslint-plugin-jsdoc@65.4.2(eslint@10.13.0(jiti@2.7.0))(typescript@6.0.3):
     dependencies:
       '@es-joy/escodegen': 4.2.0
       '@es-joy/jsdoccomment': 1.0.0
