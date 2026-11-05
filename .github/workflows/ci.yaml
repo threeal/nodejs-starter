@@ -12,11 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.1
 
-      - name: Setup Lefthook
-        uses: threeal/setup-lefthook-action@v1.0.0
-
       - name: Setup pnpm
         uses: threeal/setup-pnpm-action@v2.1.0
+
+      - name: Setup Lefthook
+        uses: threeal/setup-lefthook-action@v1.0.0
 
       - name: Check pre-commit hook
         run: lefthook run pre-commit --all-files
