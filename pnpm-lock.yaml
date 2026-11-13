@@ -183,8 +183,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.14.0(jiti@2.7.0))
       '@tsconfig/node26':
-        specifier: ^26.0.1
-        version: 26.0.1
+        specifier: ^26.0.2
+        version: 26.0.2
       '@types/node':
         specifier: ^26.6.6
         version: 26.6.6
@@ -459,8 +459,8 @@ packages:
     resolution: {integrity: sha512-TeheYy0ILzBEI/CO55CP6zJCSdSWeRtGnHy8U8dWSUH4I68iqTsy7HkMktR4xakThc9jotkPQUXT4ITdbV7cHA==}
     engines: {node: '>=18'}
 
-  '@tsconfig/node26@26.0.1':
-    resolution: {integrity: sha512-NQT8JUFDKeAIWpR1dakeF534msQAsoSLr1WpKdRDt3sCvk2fsFK3EVKUBG5xKYVamiRO6yTfniiyvCaqOGgn/g==}
+  '@tsconfig/node26@26.0.2':
+    resolution: {integrity: sha512-RIBSoNGQxUQ8r4hSrEzS6TrUneoKaCuX6BjL4zF3wqttGq2w06zCea4d8P1gRvM/HZyDT1FQJ8trZSyy/63oMg==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1582,7 +1582,7 @@ snapshots:
 
   '@sindresorhus/base62@1.0.0': {}
 
-  '@tsconfig/node26@26.0.1': {}
+  '@tsconfig/node26@26.0.2': {}
 
   '@types/chai@5.2.3':
     dependencies:
