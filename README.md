@@ -40,7 +40,7 @@ Write code in `src/`. Test files live alongside source as `*.test.ts`. Run the t
 pnpm vitest run
 ```
 
-The project enforces 100% code coverage on every run.
+The project enforces 100% code coverage, counting only files imported by a test file.
 
 Each `git commit` runs the pre-commit hook registered during setup, which checks your changes and fixes what it can in place. If it fails, fix any reported issues, re-stage the changed files, and commit again.
 
