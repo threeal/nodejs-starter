@@ -24,13 +24,15 @@ lefthook install
 
 Replace or extend the template files to fit your project:
 
-- **`src/cli.ts`** — Replace or remove the placeholder CLI. Remove this file, the `bin` entry in `package.json`, and the `yargs` and `@types/yargs` dependencies if your project doesn't need a CLI.
+- **`src/cli.ts`** — Replace or remove the placeholder CLI.
 - **`src/fibonacci.ts`** — Replace with your own library logic.
 - **`src/index.ts`** — Update the public API exports to match your library.
 - **`CLAUDE.md`** — Replace with guidance specific to your project.
 - **`LICENSE`** — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
 - **`package.json`** — Update the package name, description, version, author, and other metadata.
 - **`README.md`** — Replace with a description of your project.
+
+If your project doesn't need a CLI, remove `src/cli.ts`, the `bin` entry in `package.json`, and the `yargs` and `@types/yargs` dependencies.
 
 ## Development
 
