@@ -24,9 +24,7 @@ lefthook install
 
 Replace or extend the template files to fit your project:
 
-- **`src/cli.ts`** — Replace or remove the placeholder CLI.
-- **`src/fibonacci.ts`** — Replace with your own library logic.
-- **`src/index.ts`** — Update the public API exports to match your library.
+- **`src/`** — Replace the placeholder library, CLI, and tests with your own code.
 - **`CLAUDE.md`** — Replace with guidance specific to your project.
 - **`LICENSE`** — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
 - **`package.json`** — Update the package name, description, version, author, and other metadata.
@@ -36,13 +34,13 @@ If your project doesn't need a CLI, remove `src/cli.ts`, the `bin` entry in `pac
 
 ## Development
 
-Write code in `src/`. Test files live alongside source as `*.test.ts`. Run the test suite with:
+Run the tests with coverage through Vitest:
 
 ```sh
 pnpm vitest run
 ```
 
-The project enforces 100% code coverage, counting only files imported by a test file.
+The project enforces 100% code coverage, counting only files the tests import.
 
 Each `git commit` runs the pre-commit hook registered during setup, which checks your changes and fixes what it can in place. If it fails, fix any reported issues, re-stage the changed files, and commit again.
 
