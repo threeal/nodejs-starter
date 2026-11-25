@@ -1,5 +1,6 @@
 {
   "extends": "@tsconfig/node26",
+  "include": ["*.ts", "src"],
   "compilerOptions": {
     "noEmit": true
   }
