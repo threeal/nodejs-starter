@@ -5,7 +5,7 @@ on:
 jobs:
   package:
     name: Package
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
@@ -28,7 +28,7 @@ jobs:
   draft:
     name: Draft
     needs: package
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: write
     steps:
