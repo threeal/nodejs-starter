@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/node26",
-  "include": ["*.ts", "src"],
+  "include": ["*.ts", "src/**/*.test.*"],
+  "references": [{ "path": "./tsconfig.build.json" }],
   "compilerOptions": {
     "noEmit": true
   }

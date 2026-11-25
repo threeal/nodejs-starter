@@ -7,7 +7,7 @@ pre-commit:
       run: pnpm install
 
     - name: check types
-      run: pnpm tsc
+      run: pnpm tsc -b
 
     - name: fix lint
       run: pnpm eslint --fix --max-warnings 0

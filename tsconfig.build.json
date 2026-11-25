@@ -3,8 +3,8 @@
   "include": ["src"],
   "exclude": ["**/*.test.*"],
   "compilerOptions": {
+    "composite": true,
     "rootDir": "src",
-    "declaration": true,
     "outDir": "dist"
   }
 }
