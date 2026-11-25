@@ -5,7 +5,6 @@
   "compilerOptions": {
     "rootDir": "src",
     "declaration": true,
-    "outDir": "dist",
-    "types": ["node"]
+    "outDir": "dist"
   }
 }
