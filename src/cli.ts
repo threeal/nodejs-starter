@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
+import { createRequire } from "node:module";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import { fibonacciSequence } from "./fibonacci.js";
 
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json") as { version: string };
+
 await yargs(hideBin(process.argv))
   .scriptName("bonacci")
-  .version("0.1.0")
+  .version(version)
   .command(
     "$0 <n>",
     "Generate a Fibonacci sequence up to the given number of terms",
