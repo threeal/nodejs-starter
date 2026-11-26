@@ -16,6 +16,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Set version
+        run: pnpm version from-git --no-git-tag-version
+
       - name: Package
         run: pnpm pack
 
