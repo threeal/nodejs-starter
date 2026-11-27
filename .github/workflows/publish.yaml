@@ -1,0 +1,24 @@
+name: Publish
+on:
+  release:
+    types: [published]
+jobs:
+  npm:
+    name: npm
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Download package
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "$GITHUB_REF_NAME" --pattern "*.tgz"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7.1.0
+        with:
+          registry-url: https://registry.npmjs.org
+
+      - name: Publish package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish ./*.tgz
