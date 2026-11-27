@@ -6,6 +6,9 @@ jobs:
   npm:
     name: npm
     runs-on: ubuntu-26.04
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - name: Download package
         env:
