@@ -6,14 +6,10 @@
     "fibonacci",
     "math"
   ],
-  "homepage": "https://github.com/leonardo/bonacci#readme",
-  "bugs": {
-    "url": "https://github.com/leonardo/bonacci/issues",
-    "email": "leonardo@bonacci.com"
-  },
-  "repository": "github:leonardo/bonacci",
+  "homepage": "https://github.com/threeal/nodejs-starter#readme",
+  "bugs": "https://github.com/threeal/nodejs-starter/issues",
+  "repository": "github:threeal/nodejs-starter",
   "license": "Unlicense",
-  "author": "Leonardo Bonacci <leonardo@bonacci.com>",
   "exports": {
     ".": {
       "types": "dist/index.d.ts",
