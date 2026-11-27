@@ -27,7 +27,7 @@ Replace or extend the template files to fit your project:
 - **`src/`** — Replace the placeholder library, CLI, and tests with your own code.
 - **`CLAUDE.md`** — Replace with guidance specific to your project.
 - **`LICENSE`** — Replace with your preferred license, or keep the [Unlicense](https://unlicense.org/).
-- **`package.json`** — Update the package name, description, author, and other metadata.
+- **`package.json`** — Update the package name, description, and other metadata.
 - **`README.md`** — Replace with a description of your project.
 
 If your project doesn't need a CLI, remove `src/cli.ts`, the `bin` entry in `package.json`, and the `yargs` and `@types/yargs` dependencies.
