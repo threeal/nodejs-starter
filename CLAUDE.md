@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## About This Repository
 
-A minimal Node.js library and CLI starter template. Its only application code is a placeholder Fibonacci implementation in `src/` — real logic is added by projects derived from it.
+A minimal Node.js library and CLI starter template that provides a baseline for formatting, linting, type checking, testing, and releases. Its only application code is a placeholder Fibonacci implementation in `src/` — real logic is added by projects derived from it.
 
 ## Gotchas
 

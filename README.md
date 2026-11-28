@@ -1,6 +1,6 @@
 # Node.js Starter
 
-A minimal template for building a [Node.js](https://nodejs.org/en) library in [TypeScript](https://www.typescriptlang.org/) with [ESM](https://nodejs.org/api/esm.html) support and an optional CLI. Ships pre-configured with formatting, linting, 100% test coverage enforcement, pre-commit hooks, and CI.
+A minimal template for building a [Node.js](https://nodejs.org/en) library in [TypeScript](https://www.typescriptlang.org/) with [ESM](https://nodejs.org/api/esm.html) support and an optional CLI. Type checking, linting, and formatting are enforced on every commit, tests with 100% coverage run on every pull request, and every tag you push gets a draft GitHub release with the packed package attached. Publishing the draft then stages the same package on npm.
 
 ## Getting Started
 
