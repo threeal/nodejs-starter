@@ -3,8 +3,22 @@ on:
   push:
     tags: ["**"]
 jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Check version
+        run: |
+          VERSION=$(jq -r .version package.json)
+          echo "$VERSION"
+          test "${GITHUB_REF_NAME#v}" = "$VERSION"
+
   package:
     name: Package
+    needs: check
     runs-on: ubuntu-26.04
     steps:
       - name: Checkout
@@ -15,9 +29,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Set version
-        run: pnpm version from-git --no-git-tag-version
 
       - name: Package
         run: pnpm pack
