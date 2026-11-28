@@ -1,6 +1,6 @@
 {
   "name": "bonacci",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "description": "An example library and CLI for generating a Fibonacci sequence",
   "keywords": [
     "fibonacci",
